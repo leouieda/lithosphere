@@ -1,0 +1,65 @@
+section.has-light-background h1 {
+    color: #333333;
+}
+
+.lightcolor {
+    color: #dddddd;
+}
+
+.livgreen {
+    /*color: #12fdbf;*/
+}
+
+#talktitle {
+    font-size: 1.7em;
+    line-height: 1.5em;
+    margin-bottom: 5%;
+}
+
+.reveal ul.fa-ul {
+    list-style-type: none;
+}
+
+.reveal ul.fa-ul li {
+    margin-bottom: 5%;
+}
+
+.reveal h1, .reveal h2, .reveal h3  {
+    text-shadow: 2px 3px 3px #00000055 !important;
+}
+
+.shadow, .reveal h4 {
+    text-shadow: 1px 1px 1px #00000055 !important;
+}
+
+.reveal h3 {
+	text-transform: none;
+}
+
+.imgshadow {
+    border: none;
+    background: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.80) !important;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+}
+
+.reveal section img {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.attribution, .attribution a {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    font-size: 0.6em !important;
+}
