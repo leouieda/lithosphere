@@ -1,6 +1,6 @@
 # ENVS398 Advanced Geodynamics
 
-[Open on Binder](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398&app=lab)
 
 ## Lectures
 
