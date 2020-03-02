@@ -192,27 +192,6 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <!-- =============================================================================== -->
 
 <section>
-  <h2>Why are we studying this?</h2>
-
-  <p>Areas of impact:</p>
-
-  <ul class="fragment">
-    <li>Earthquakes</li>
-    <li>Volcanoes</li>
-    <li>Tsunamis</li>
-    <li>Water cycle</li>
-    <li>Carbon cycle (deep carbon cycle)</li>
-    <li>Role is development of photosynthesis
-      (<a href="https://doi.org/10.1016/j.epsl.2018.02.016">Cox et al.,
-        2018</a>)</li>
-  </ul>
-
-
-</section>
-
-<!-- =============================================================================== -->
-
-<section>
   <h3>Measuring plate motion</h3>
 
   <img src="gps-igs14.png" width="85%">
@@ -256,19 +235,131 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <!-- =============================================================================== -->
 
 <section>
-  <h2>Side note: Coordinate systems</h2>
-
-
+  <h2>Side note</h2>
+  <p>Coordinate systems and map projections</p>
 </section>
 
 <!-- =============================================================================== -->
 
-<section data-markdown>
-  <textarea data-template>
-    ## Plate motions on a sphere
+<section>
+  <h3>Geodetic coordinates</h3>
+
+  <div class="container">
+    <div class="col">
+      <img src="Geodetic_coordinates.svg" width="90%">
+      <p style="font-size: 0.4em; padding:0; margin:0;">
+      Source: https://en.wikipedia.org/wiki/File:Geodetic_coordinates.svg
+      (CC-BY-SA 3.0)
+      </p>
+    </div>
+    <div class="col">
+      <ul>
+        <li>$O$ = Earth's center of mass</li>
+        <li>$\phi$ = Latitude </li>
+        <li>$\lambda$ = Longitude </li>
+        <li>$h$ = geometric (ellipsoidal) height </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h3>Geocentric coordinates</h3>
+
+  <div class="container">
+    <div class="col">
+      <img src="Geocentric_coords_02.svg" width="90%">
+      <p style="font-size: 0.4em; padding:0; margin:0;">
+      Source: https://en.wikipedia.org/wiki/File:Geocentric_coords_02.svg
+      (CC-BY-SA 4.0)
+      </p>
+    </div>
+    <div class="col">
+      <ul>
+        <li>$O$ = Earth's center of mass</li>
+        <li>$\theta$ = Latitude (geocentric) </li>
+        <li>$\theta'$ = Colatitude </li>
+        <li>$\lambda$ = Longitude (same)</li>
+        <li>$r$ = geocentric radius </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h3>Local North Oriented coordinates</h3>
+
+  <div class="container">
+    <div class="col">
+      <img src="ECEF_ENU_Longitude_Latitude_relationships.svg" width="90%">
+      <p style="font-size: 0.4em; padding:0; margin:0;">
+      Source: https://commons.wikimedia.org/wiki/File:ECEF_ENU_Longitude_Latitude_relationships.svg
+      </p>
+    </div>
+    <div class="col">
+      <ul>
+        <li>$O$ = Point on surface</li>
+        <li>$(X, Y, Z)_{ecef}$ = Geocentric Cartesian</li>
+        <li>$(x, y, z)_{lno}$ = Topocentric Cartesian</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h3>Map projections</h3>
+
+  <div class="container">
+    <div class="col">
+      <img src="map-projections.svg" width="60%">
+      <p style="font-size: 0.4em; padding:0; margin:0;">
+      Source: https://en.wikipedia.org/wiki/File:Comparison_of_cartography_surface_development.svg
+      (CC-BY-SA 4.0)
+      </p>
+    </div>
+    <div class="col">
+      <ul>
+        <li>Geodetic to Cartesian</li>
+        <li>Need to represent data in maps accurately</li>
+        <li>Distortions always happen</li>
+        <li>Choice depends on use case</li>
+        <li>Examples: Mercator, UTM, Robinson</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2> End side note</h2>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Why are we studying this?</h2>
+
+  <p>Areas of impact:</p>
+
+  <ul class="fragment">
+    <li>Earthquakes</li>
+    <li>Volcanoes</li>
+    <li>Tsunamis</li>
+    <li>Water cycle</li>
+    <li>Carbon cycle (deep carbon cycle)</li>
+    <li>Role is development of photosynthesis
+      (<a href="https://doi.org/10.1016/j.epsl.2018.02.016">Cox et al.,
+        2018</a>)</li>
+  </ul>
 
 
-  </textarea>
 </section>
 
 <!-- =============================================================================== -->
@@ -306,7 +397,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h2>References</h2>
 
-  <ul style="font-size: 0.5em">
+  <ul style="font-size: 0.7em">
     <li>
     Cox, G. M., Lyons, T. W., Mitchell, R. N., Hasterok, D., & Gard, M. (2018).
     Linking the rise of atmospheric oxygen to growth in the continental
