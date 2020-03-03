@@ -9,7 +9,7 @@
 
 ## Labs
 
-Coming soon.
+1. [Loading and plotting geophysical data](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1.ipynb) ([solution](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1-solved.ipynb))
 
 
 ## License
