@@ -2,6 +2,8 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398&app=lab)
 
+Part 2 of the module covering the lithosphere.
+
 ## Lectures
 
 1. [Introduction to the module](https://www.leouieda.com/envs398/slides/0-introduction/)
@@ -9,7 +11,7 @@
 
 ## Labs
 
-1. [Loading and plotting geophysical data](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1.ipynb) ([solution](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1-solved.ipynb))
+1. [Loading and plotting geophysical data](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1.ipynb) ([solution](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/labs/lab1-solution.ipynb)): This requires installing extra libraries so it might be easier to load through Binder (use button above).
 
 
 ## License
