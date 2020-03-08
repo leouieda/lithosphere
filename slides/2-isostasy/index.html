@@ -1,0 +1,262 @@
+<!--
+Lecture slides for ENVS 398 Advanced Geodynamics
+===============================================================================
+-->
+
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="../js/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="../js/revealjs/css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../js/revealjs/lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- FontAwsome icons -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '../js/revealjs/css/print/pdf.css' : '../js/revealjs/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Page title -->
+    <title>
+        Isostasy and Plate Flexure
+        -
+        ENVS398 Advanced Geodynamics
+    </title>
+
+</head>
+
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Slides are sections -->
+<!-- =============================================================================== -->
+
+<section data-background-image="../img/background.svg"
+         data-background-repeat="no-repeat"
+         data-background-position="center"
+         >
+  <p style="font-size: 0.6em; line-height: 1.5em; margin-bottom: 10%; text-align: center;">
+    ENVS398 Advanced Geodynamics
+    |
+    Part 2 - The Lithosphere
+  </p>
+  <h1>
+      Isostasy and Plate Flexure
+  </h1>
+  <p style="font-size: 0.5em; margin-top: 15%; text-align: center;">
+    <i class="fas fa-user"></i> Leonardo Uieda
+    <i style="margin-left: 10px;" class="fas fa-envelope"></i> uieda@liverpool.ac.uk
+    <i style="margin-left: 10px;" class="fas fa-building"></i> Herdman Building - A2.06
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Learning objectives
+
+    Understand the mechanisms for isostatic compensation:
+
+    * The three mechanisms: Airy–Heiskanen, Pratt–Hayford, Vening Meinesz
+    * How these mechanisms relate to different geodynamic contexts
+    * Geophysical tools used to investigate them
+    * How to use isostatic compensation theory to probe the lithosphere
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>What plates look like on the outside</h2>
+
+  <img src="../1-plate-tectonics/topography.png" width="80%">
+</section>
+
+<section>
+  <h2>What plates look like on the outside</h2>
+
+  <img src="topography-profile-location.png" width="80%">
+</section>
+
+<section>
+  <h2>Profile across the Atlantic</h2>
+
+  <img src="topography-profile.png" width="100%">
+
+  <p class="fragment">What does the lithosphere look like in depth?</p>
+</section>
+
+<section>
+  <h2>Hypothesis: Moho is flat</h2>
+
+  <img src="topography-profile-hypothesis.png" width="100%">
+</section>
+
+<section>
+  <h2>How would you test this hypothesis?</h2>
+
+  <p>
+  Divide into small groups and discuss (5 min)
+  </p>
+
+  <div class="fragment">
+    <p style="margin-top: 5%"> Possible geophysical methods: </p>
+  <ul>
+    <li> Seismic (refraction, tomography, receiver functions) </li>
+    <li> Magnetotellurics </li>
+    <li> Gravity disturbances </li>
+  </ul>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Data sources</h2>
+
+  <ul style="font-size: 1em">
+    <li>
+      ETOPO1 global relief:
+      <a href="https://doi.org/10.7289/V5C8276M">NOAA</a>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Source code</h2>
+
+  <p>
+  Python code for making the figures shown in this lecture are available in a
+  Jupyter notebook:
+  </p>
+
+  <ul style="font-size: 1em">
+    <li>
+      <a href="https://github.com/leouieda/envs398/blob/master/slides/2-isostasy/make_figures.ipynb">view online (static)</a>
+    </li>
+    <li>
+      <a
+        href="https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%2Fslides%2F2-isostasy%2Fmake_figures.ipynb%3Fautodecode">run online with Binder</a>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>References</h2>
+
+  <ul style="font-size: 0.7em">
+    <li>
+    Cox, G. M., Lyons, T. W., Mitchell, R. N., Hasterok, D., & Gard, M. (2018).
+    Linking the rise of atmospheric oxygen to growth in the continental
+    phosphorus inventory. Earth and Planetary Science Letters, 489, 28–36.
+    https://doi.org/10.1016/j.epsl.2018.02.016
+    </li>
+    <li>
+    Müller, R. D., Sdrolias, M., Gaina, C., & Roest, W. R. (2008). Age,
+    spreading rates, and spreading asymmetry of the world’s ocean crust.
+    Geochemistry, Geophysics, Geosystems, 9(4). doi:10.1029/2007GC001743
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-left"></i> Back:
+      <a target="_blank" href="../1-plate-tectonics/">Lecture 1 - Plate Tectonics</a>
+    </li>
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../3-oceanic-lithosphere/">Lecture 3 - Oceanic Lithosphere</a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- =============================================================================== -->
+
+<section>
+
+  <p style="font-size: 1.6em">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  </p>
+
+  <p style="font-size: 0.8em;">
+  "ENVS398 Advanced Geodynamics"
+  by <a href="https://www.leouieda.com">Leonardo Uieda</a> is licensed under a
+  <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution 4.0 International License</a>.
+  </p>
+
+  <p style="font-size: 0.8em;">
+  <i class="fab fa-github"></i>
+  Source code:
+  <a href="https://github.com/leouieda/envs398">leouieda/envs398</a>
+  </p>
+
+</section>
+
+<!-- =============================================================================== -->
+
+</div>
+</div>
+
+<!--
+Placed at the end of the document so the pages load faster
+==========================================================
+-->
+
+<script src="../js/revealjs/lib/js/head.min.js"></script>
+<script src="../js/revealjs/js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        controls: true,
+        transition: 'none',
+        mouseWheel: true,
+        history: true,
+        fragmentInURL: true,
+        slideNumber: 'c/t',
+        dependencies: [
+            { src: '../js/revealjs/plugin/markdown/marked.js' },
+            { src: '../js/revealjs/plugin/markdown/markdown.js' },
+            { src: '../js/revealjs/plugin/notes/notes.js', async: true },
+            { src: '../js/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: '../js/revealjs/plugin/math-katex/math-katex.js', async: true }
+        ]
+    });
+</script>
+
+</body>
+</html>
