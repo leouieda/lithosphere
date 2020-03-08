@@ -2,7 +2,7 @@
 
 Part 2 of the module covering the lithosphere.
 
-To launch a Jupyter lab online and run the code in `labs` and `slides` folders 
+To launch a Jupyter lab online and run the code in `labs` and `slides` folders
 (the `.ipynb` files), click on this button:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%3Fautodecode)
@@ -11,6 +11,7 @@ To launch a Jupyter lab online and run the code in `labs` and `slides` folders
 
 1. [Introduction to the module](https://www.leouieda.com/envs398/slides/0-introduction/)
 2. [Plate tectonics](https://www.leouieda.com/envs398/slides/1-plate-tectonics/)
+3. [Isostasy and plate flexure](https://www.leouieda.com/envs398/slides/2-isostasy/)
 
 ## Labs
 
