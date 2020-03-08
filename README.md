@@ -1,8 +1,11 @@
 # ENVS398 Advanced Geodynamics
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398&app=lab)
-
 Part 2 of the module covering the lithosphere.
+
+To launch a Jupyter lab online and run the code in `labs` and `slides` folders 
+(the `.ipynb` files), click on this button:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%3Fautodecode)
 
 ## Lectures
 
