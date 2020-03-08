@@ -16,8 +16,6 @@ Lecture slides for ENVS 398 Advanced Geodynamics
     <link rel="stylesheet" href="../js/revealjs/css/theme/white.css">
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="../js/revealjs/lib/css/zenburn.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/custom.css">
@@ -93,7 +91,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Mid-Atlantic ridge</h3>
 
-  <img src="topography.png" width="100%">
+  <img src="topography.png" width="80%">
 
 </section>
 
@@ -102,7 +100,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Global seismicity</h3>
 
-  <img src="global-seismicity.png" width="100%">
+  <img src="global-seismicity.png" width="80%">
 
 </section>
 
@@ -111,9 +109,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Magnetic anomalies</h3>
 
-  <img src="EMAG2_V3_sealevelposter.jpg" width="70%">
+  <img src="EMAG2_V3_sealevelposter.jpg" width="56%">
 
-  <p style="font-size: 0.4em; padding:0; margin:0;">
+  <p class="attribution">
   Source: https://ngdc.noaa.gov/geomag/emag2.html
   </p>
 
@@ -124,9 +122,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Dating magnetic stripes</h3>
 
-  <img src="lithosphere-age.png" width="90%">
+  <img src="lithosphere-age.png" width="75%">
 
-  <p style="font-size: 0.4em; padding:0; margin:0;">
+  <p class="attribution">
   Müller et al. (2008)
   </p>
 
@@ -137,7 +135,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Types of plate boundaries</h3>
 
-  <img src="topography.png" width="100%">
+  <p>Identify some examples:</p>
+
+  <img src="topography.png" width="70%">
 
 </section>
 
@@ -147,20 +147,17 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <h2>The lithosphere</h2>
 
   <div class="container">
-    <div class="col">
-      <img src="Earth_cutaway_schematic-en.svg">
-      <p style="font-size: 0.4em; padding:0; margin:0;">
+    <div class="col-img">
+      <img src="Earth_cutaway_schematic-en.svg" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li> Plates are made of rigid lithosphere </li>
+        <li> Includes the crust and upper mantle </li>
+      </ul>
+      <p class="attribution">
       Source: https://en.wikipedia.org/wiki/File:Earth_cutaway_schematic-en.svg
       </p>
-    </div>
-    <div class="col">
-      <p style="font-size: 0.8em">
-      Plates are made of rigid lithosphere
-      </p>
-      <p style="font-size: 0.8em">
-      Includes the crust and upper mantle
-      </p>
-
     </div>
   </div>
 
@@ -171,9 +168,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Name the plates</h3>
 
-  <img src="Plates_tect2_en_empty.svg" width="80%">
+  <img src="Plates_tect2_en_empty.svg" width="65%">
 
-  <p style="font-size: 0.4em; padding:0; margin:0;">
+  <p class="attribution">
   Source: https://en.wikipedia.org/wiki/File:Plates_tect2_en.svg
   </p>
 
@@ -184,9 +181,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Name the plates</h3>
 
-  <img src="Plates_tect2_en.svg" width="80%">
+  <img src="Plates_tect2_en.svg" width="65%">
 
-  <p style="font-size: 0.4em; padding:0; margin:0;">
+  <p class="attribution">
   Source: https://en.wikipedia.org/wiki/File:Plates_tect2_en.svg
   </p>
 
@@ -197,14 +194,14 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Measuring plate motion</h3>
 
-  <img src="gps-igs14.png" width="85%">
+  <img src="gps-igs14.png" width="70%">
 
 </section>
 
 <!-- =============================================================================== -->
 
 <section>
-  <h3>Reference frames</h3>
+  <h2>Reference frames</h2>
 
   <p>
   Plate motions are relative to a given reference frame:
@@ -231,7 +228,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <section>
   <h3>Reference frames</h3>
 
-  <img src="gps-nam14.png" width="85%">
+  <img src="gps-nam14.png" width="70%">
 
 </section>
 
@@ -407,7 +404,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 
   <ul style="font-size: 1em">
     <li>
-      <a href="https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/slides/1-plate-tectonics/make_figures.ipynb">view online (static)</a>
+      <a href="https://github.com/leouieda/envs398/blob/master/slides/1-plate-tectonics/make_figures.ipynb">view online (static)</a>
     </li>
     <li>
       <a
@@ -441,16 +438,14 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <!-- =============================================================================== -->
 
 <section>
-  <p>
-    <i class="fas fa-arrow-left"></i>
-    Back:
-    <a target="_blank" href="../0-introduction/">Introduction</a>
-  </p>
-  <p>
-    <i class="fas fa-arrow-right"></i>
-    Next:
-    <a target="_blank" href="../2-oceanic-lithosphere/">Lecture 2 - Oceanic Lithosphere</a>
-  </p>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-left"></i> Back:
+      <a target="_blank" href="../0-introduction/">Introduction</a>
+    </li>
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../2-isostasy/">Lecture 2 - Isostasy and Plate Flexure</a>
+    </li>
+  </ul>
 </section>
 
 
@@ -496,7 +491,9 @@ Placed at the end of the document so the pages load faster
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
-        controls: false,
+        width: 1920,
+        height: 1080,
+        controls: true,
         transition: 'none',
         mouseWheel: true,
         history: true,
@@ -511,10 +508,6 @@ Placed at the end of the document so the pages load faster
         ]
     });
 </script>
-
-<!-- Bootstrap core JavaScript -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>

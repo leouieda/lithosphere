@@ -56,7 +56,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
          data-background-repeat="no-repeat"
          data-background-position="center"
          >
-  <p style="font-size: 0.6em; line-height: 1.5em; margin-bottom: 10%; text-align: center;">
+  <p style="font-size: 0.5em; margin-bottom: 10%; text-align: center;">
     ENVS398 Advanced Geodynamics
     |
     Part 2 - The Lithosphere
@@ -93,18 +93,13 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <textarea data-template>
     ## Module information
 
-    Five weeks of classes:
-
-    * 5 lectures - Monday
-    * 4 practicals - Tuesday
-
-    Assessment:
-
-    * Poster presentation (20%) - Due on 2pm Tue 28 April 2020
-    * Exam (30%)
-
-    Computational parts will use Python with [Jupyter
-    notebooks](https://jupyter.org/).
+    * Five weeks of classes:
+      * 5 lectures - Monday
+      * 4 practicals - Tuesday
+    * Assessment:
+      * Poster presentation (20%) - Due on 2pm Tue 28 April 2020
+      * Exam (30%)
+    * Computational parts will use Python with [Jupyter notebooks](https://jupyter.org/).
 
   </textarea>
 </section>
@@ -116,13 +111,13 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 
   <ol>
     <li>Plate tectonics</li>
+    <li>Isostasy and plate flexure</li>
     <li>Oceanic lithosphere</li>
     <li>Subduction</li>
-    <li>Isostasy and plate flexure</li>
     <li>Foreland and extensional basins</li>
   </ol>
 
-  <p style="font-size: 0.5em; margin-top: 5%;">
+  <p class="attribution">
     Note: The order may change depending on our progress and schedule.
   </p>
 </section>
@@ -133,18 +128,12 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <textarea data-template>
     ## Reading
 
-    Textbook:
-
-    * "The Solid Earth" by C. M. R. Fowler.
-    * "Geodynamics" by Donald Turcotte and Gerald Schubert.
-
-    Python:
-
-    * Software Carpentry ([free online](https://software-carpentry.org/lessons/))
-    * “Think Python” by Allen B. Downey
-      ([free pdf](https://greenteapress.com/wp/think-python-2e))
-
-
+    * Textbook:
+      * "The Solid Earth" by C. M. R. Fowler.
+      * "Geodynamics" by Donald Turcotte and Gerald Schubert.
+    * Python:
+      * Software Carpentry ([free online](https://software-carpentry.org/lessons/))
+      * "Think Python" by Allen B. Downey ([free pdf](https://greenteapress.com/wp/think-python-2e))
   </textarea>
 </section>
 
@@ -200,11 +189,11 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 <!-- =============================================================================== -->
 
 <section>
-  <p>
-    <i class="fas fa-arrow-right"></i>
-    Next:
-    <a target="_blank" href="../1-plate-tectonics/">Lecture 1 - Plate Tectonics</a>
-  </p>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../1-plate-tectonics/">Lecture 1 - Plate Tectonics</a>
+    </li>
+  </ul>
 </section>
 
 <!-- =============================================================================== -->
@@ -249,11 +238,14 @@ Placed at the end of the document so the pages load faster
     // - https://github.com/hakimel/reveal.js#configuration
     // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
-        controls: false,
+        width: 1920,
+        height: 1080,
+        controls: true,
         transition: 'none',
         mouseWheel: true,
         history: true,
         fragmentInURL: true,
+        slideNumber: 'c/t',
         dependencies: [
             { src: '../js/revealjs/plugin/markdown/marked.js' },
             { src: '../js/revealjs/plugin/markdown/markdown.js' },
