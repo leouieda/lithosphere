@@ -16,7 +16,10 @@
    version="1.1"
    viewBox="0 0 280 120"
    height="120mm"
-   width="280mm">
+   width="280mm"
+   inkscape:export-filename="finite-differences-grid.png"
+   inkscape:export-xdpi="211.66667"
+   inkscape:export-ydpi="211.66667">
   <defs
      id="defs2">
     <marker
@@ -55,17 +58,17 @@
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3187783"
-     inkscape:cx="516.79955"
+     inkscape:zoom="7.3820676"
+     inkscape:cx="447.57775"
      inkscape:cy="-50.064341"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="3200"
-     inkscape:window-height="1800"
-     inkscape:window-x="0"
+     inkscape:window-width="1596"
+     inkscape:window-height="1796"
+     inkscape:window-x="1600"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      fit-margin-top="0"
