@@ -1,0 +1,276 @@
+<!--
+Lecture slides for ENVS 398 Advanced Geodynamics
+===============================================================================
+-->
+
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="../js/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="../js/revealjs/css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../js/revealjs/lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- FontAwsome icons -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '../js/revealjs/css/print/pdf.css' : '../js/revealjs/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Page title -->
+    <title>
+        Oceanic lithosphere
+        -
+        ENVS398 Advanced Geodynamics
+    </title>
+
+</head>
+
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Slides are sections -->
+<!-- =============================================================================== -->
+
+<section data-background-image="../img/background.svg"
+         data-background-repeat="no-repeat"
+         data-background-position="center"
+         >
+  <p style="font-size: 0.6em; line-height: 1.5em; margin-bottom: 10%; text-align: center;">
+    ENVS398 Advanced Geodynamics
+    |
+    Part 2 - The Lithosphere
+  </p>
+  <h1>
+      Oceanic lithosphere
+  </h1>
+  <p style="font-size: 0.5em; margin-top: 15%; text-align: center;">
+    <i class="fas fa-user"></i> Leonardo Uieda
+    <i style="margin-left: 10px;" class="fas fa-envelope"></i> uieda@liverpool.ac.uk
+    <i style="margin-left: 10px;" class="fas fa-building"></i> Herdman Building - A2.06
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Learning objectives
+
+    Understand the physical models for the formation of<br>the oceanic lithosphere:
+
+    * The physical principals behind them
+    * How they compare to observations
+    * Their implications for our understanding of ocean floor topography
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h1>Previously<br>on ENVS398</h1>
+</section>
+
+<section>
+  <h3>The oceans are close to isostatic equilibrium</h3>
+
+  <img src="../2-isostasy/gravity-disturbance.png" width="70%">
+</section>
+
+<section>
+  <h3>Mid-ocean ridges aren't compensated by<br>crustal roots (Airy isostasy)</h3>
+
+  <img src="../2-isostasy/topography-profile-airy.png" width="70%">
+  <p class="attribution">
+  This model does not match plate tectonics (plates are created at the
+  ridges).
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Questions
+
+    * What is the thickness of the oceanic lithosphere?
+    * How does it vary with lithosphere age?
+    * Can models match geophysical observations?
+  </textarea>
+</section>
+
+<section>
+  <h1>Global heat flow</h1>
+</section>
+
+<section>
+  <h3>Most heat is lost through the oceanic plates</h3>
+
+  Global heat flow map
+  <img src="../2-isostasy/topography-profile-airy.png" width="70%">
+</section>
+
+<section>
+  <h3>Young lithosphere is warmer than older lithosphere</h3>
+
+  Heat flow figure with an age figure.
+  <img src="../2-isostasy/topography-profile-airy.png" width="70%">
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Heat flow in oceanic plates
+
+    * Plates formed at mid-ocean ridges.
+    * Most cooling happens through **conduction**.
+    * Convective cooling associated with fluid flow in the crust happens mostly on younger lithosphere.
+  </textarea>
+</section>
+
+<section>
+  <h1>Conductive cooling models</h1>
+</section>
+
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Data sources</h2>
+
+  <ul style="font-size: 1em">
+    <li>
+    </li>
+    <li>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Source code</h2>
+
+  <p>
+  Python code for making the figures shown in this lecture are available in a
+  Jupyter notebook:
+  </p>
+
+  <ul style="font-size: 1em">
+    <li>
+      <a href="https://github.com/leouieda/envs398/blob/master/slides/2-isostasy/make_figures.ipynb">view online (static)</a>
+    </li>
+    <li>
+      <a
+        href="https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%2Fslides%2F2-isostasy%2Fmake_figures.ipynb%3Fautodecode">run online with Binder</a>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>References</h2>
+
+  <ul style="font-size: 0.7em">
+    <li>
+      Chapter 7 section 5: Oceanic heat flow, "The Solid Earth" by C. M. R. Fowler.
+    </li>
+    <li>
+      Chapter 4 sections 16 and 17: Cooling of the oceanic lithosphere, "Geodynamics" by Donald Turcotte and Gerald Schubert.
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-left"></i> Back:
+      <a target="_blank" href="../2-isostasy/">Lecture 2 - Isostasy and Plate Flexure</a>
+    </li>
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../4-subduction/">Lecture 4 - Subduction</a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- =============================================================================== -->
+
+<section>
+
+  <p style="font-size: 1.6em">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  </p>
+
+  <p style="font-size: 0.8em;">
+  "ENVS398 Advanced Geodynamics"
+  by <a href="https://www.leouieda.com">Leonardo Uieda</a> is licensed under a
+  <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution 4.0 International License</a>.
+  </p>
+
+  <p style="font-size: 0.8em;">
+  <i class="fab fa-github"></i>
+  Source code:
+  <a href="https://github.com/leouieda/envs398">leouieda/envs398</a>
+  </p>
+
+</section>
+
+<!-- =============================================================================== -->
+
+</div>
+</div>
+
+<!--
+Placed at the end of the document so the pages load faster
+==========================================================
+-->
+
+<script src="../js/revealjs/lib/js/head.min.js"></script>
+<script src="../js/revealjs/js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        controls: true,
+        transition: 'none',
+        mouseWheel: true,
+        history: true,
+        fragmentInURL: true,
+        slideNumber: 'c/t',
+        dependencies: [
+            { src: '../js/revealjs/plugin/markdown/marked.js' },
+            { src: '../js/revealjs/plugin/markdown/markdown.js' },
+            { src: '../js/revealjs/plugin/notes/notes.js', async: true },
+            { src: '../js/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: '../js/revealjs/plugin/math-katex/math-katex.js', async: true }
+        ]
+    });
+</script>
+
+</body>
+</html>
