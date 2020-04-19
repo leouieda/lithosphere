@@ -142,9 +142,156 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h1>Conductive cooling models</h1>
+  <h1>Conductive cooling:</h1>
+  <h2>Half-space model (HSM)</h2>
 </section>
 
+<section>
+  <h3>Model setup</h3>
+
+  Include figure of the model setup.
+
+  <ul>
+    <li>
+      Convection of the mantle is primarily controlled by thin thermal boundary
+      layers.
+    </li>
+    <li>
+    The surface thermal boundary layer,
+    or oceanic lithosphere is, the most
+    important component of the
+    convecting system because it
+    represents Earth’s greatest
+    temperature gradient & has a greater
+    surface area than the second most
+    important thermal boundary layer
+    which is at the core-mantle boundary.
+    </li>
+    <li>
+    As the lithosphere cools it becomes
+    denser, the seafloor depth increases
+    and ultimately the lithosphere initiates
+    subduction (driving convective flow
+    and efficiently quenching the mantle.
+    </li>
+    <li>
+      Spreading and cooling are symmetric around the ridge axis.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Governing equation</h3>
+
+  FIGURE OF THE MODEL SETUP
+
+  <p>2D heat in the lithosphere:</p>
+
+  <p style="margin: 5% 0;">
+  $
+  \dfrac{\partial^2 T}{\partial x^2}
+  + \dfrac{\partial^2 T}{\partial z^2}
+  = \dfrac{u}{\kappa} \dfrac{\partial T}{\partial x}
+  $
+  </p>
+  <ul>
+    <li>
+      No heat generation.
+    </li>
+    <li>
+      Steady-state.
+    </li>
+    <li>
+      Advection term (sea-floor spreading).
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Assumption</h3>
+
+  <p>Horizontal conduction is negligible.</p>
+
+  <p style="margin: 5% 0;">
+  $ \dfrac{\partial^2 T}{\partial x^2} = 0 $
+  </p>
+  <p style="margin: 5% 0;">
+  $
+  \dfrac{\partial^2 T}{\partial z^2}
+  = \dfrac{u}{\kappa} \dfrac{\partial T}{\partial x}
+  $
+  </p>
+</section>
+
+<section>
+  <h3>Reintroducing time</h3>
+
+  <p>Changing the advection term to time:</p>
+
+  <p style="margin: 5% 0;">
+  $
+  \dfrac{\partial^2 T}{\partial z^2}
+  = \dfrac{u}{\kappa} \dfrac{\partial T}{\partial x}
+  $
+  </p>
+  <p style="margin: 5% 0;" class="fragment">
+  $
+  u = \dfrac{\partial x}{\partial t}
+  \to
+  \dfrac{\partial T}{\partial x} \dfrac{\partial x}{\partial t}  =
+  \dfrac{\partial T}{\partial t}
+  $
+  </p>
+  <p style="margin: 5% 0;" class="fragment">
+  $
+  \dfrac{\partial^2 T}{\partial z^2}
+  = \dfrac{1}{\kappa} \dfrac{\partial T}{\partial t}
+  $
+  </p>
+</section>
+
+<section>
+  <h3>Boundary conditions</h3>
+
+  FIGURE OF MODEL
+
+  <ul>
+    <li>
+      The temperature at the ridge ($x=0$) is the asthenosphere temperature
+      ($T_a$).
+    </li>
+    <li>
+      The top of the lithosphere ($z=0$) is at a constant temperature
+      ($T = 0\ C^\circ$).
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Up next: the oceanic lithosphere</h2>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="density-pratt.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          What explains the decreased density at mid-ocean ridges?
+        </li>
+        <li>
+          How is it created?
+        </li>
+        <li>
+          What is it's internal structure?
+        </li>
+        <li>
+          How does it evolve over time?
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <!-- =============================================================================== -->
 
