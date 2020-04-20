@@ -321,7 +321,56 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h3>Lithospheric thickness</h3>
+  <h3>Solution</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col-img">
+      <img src="./halfspace-temperature.png" width="100%">
+    </div>
+    <div class="col-text">
+      <p> Assuming:</p>
+      <ul>
+        <li>
+          $T_0 = 273\ K$
+        </li>
+        <li>
+          $T_a = 1300\ K$
+        </li>
+        <li>
+          $\alpha = 1\ mm^2/s$
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Comparison with observations</h1>
+</section>
+
+<section>
+  <h2>Lithospheric thickness</h2>
+  <ul>
+    <li>Can be measured with seismic methods.</li>
+    <li>For example: receiver functions, surface wave dispersion,
+      tomography.</li>
+    <li>We can predict thickness with our model under some assumptions.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>The data</h3>
+
+  <p style="font-size: 0.8em">
+  Lithospheric thickness from inversion of Rayleigh wave dispersion data
+  <br>
+  (<a href="https://doi.org/10.1126/science.186.4159.141">Leeds et al., 1974</a>).
+  </p>
+  <img src="" width="80%">
+</section>
+
+<section>
+  <h3>Lithospheric thickness for half-space cooling</h3>
 
   <div class="container" style="margin-top: 5%;">
     <div class="col">
@@ -333,20 +382,20 @@ Lecture slides for ENVS 398 Advanced Geodynamics
           Here we'll use:
           $\dfrac{T - T_a}{T_0 - T_a} = 0.1$
         </li>
+        <li class="fragment">
+          Substitute in solution:
+          $\text{erf}\left(\dfrac{z}{2\sqrt{\alpha t}}\right) = 1 - 0.1$
+        </li>
       </ul>
     </div>
     <div class="col">
       <ul>
         <li class="fragment">
-          Substitute in solution:
-          $\text{erf}\left(\dfrac{z}{2\sqrt{\alpha t}}\right) = 1 - 0.1$
-        </li>
-        <li class="fragment">
           Taking the inverse:
           $\dfrac{z}{2\sqrt{\alpha t}} = \text{erf}^{-1}(1 - 0.1) = 1.16$
         </li>
         <li class="fragment">
-          $z = 2.32\sqrt{\alpha t}$
+          $z_{litho} = 2.32\sqrt{\alpha t}= 2.32\sqrt{\alpha \frac{x}{u}}$
         </li>
       </ul>
     </div>
@@ -357,7 +406,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h3>Lithospheric thickness</h3>
+  <h3>Half-space model predictions</h3>
 
   <p style="font-size: 0.8em">
   Assuming $T_a = 1300\ K$, $T_0 = 273\ K$, and $\alpha = 1\ \frac{mm^2}{s}$
