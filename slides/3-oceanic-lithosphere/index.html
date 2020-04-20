@@ -366,7 +366,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <br>
   (<a href="https://doi.org/10.1126/science.186.4159.141">Leeds et al., 1974</a>).
   </p>
-  <img src="" width="80%">
+  <img src="./lithospheric-thickness-data.png" width="70%">
 </section>
 
 <section>
@@ -376,26 +376,29 @@ Lecture slides for ENVS 398 Advanced Geodynamics
     <div class="col">
       <ul>
         <li class="fragment">
-          Defined based on the temperature.
+          Based on the temperature.
         </li>
         <li class="fragment">
           Here we'll use:
-          $\dfrac{T - T_a}{T_0 - T_a} = 0.1$
+          $\dfrac{T - T_0}{T_a - T_0} = 0.8$
         </li>
         <li class="fragment">
-          Substitute in solution:
-          $\text{erf}\left(\dfrac{z}{2\sqrt{\alpha t}}\right) = 1 - 0.1$
+          This is somewhat arbitrary.
         </li>
       </ul>
     </div>
     <div class="col">
       <ul>
         <li class="fragment">
-          Taking the inverse:
-          $\dfrac{z}{2\sqrt{\alpha t}} = \text{erf}^{-1}(1 - 0.1) = 1.16$
+          Substitute in solution:
+          $\text{erf}\left(\dfrac{z}{2\sqrt{\alpha t}}\right) = 0.8$
         </li>
         <li class="fragment">
-          $z_{litho} = 2.32\sqrt{\alpha t}= 2.32\sqrt{\alpha \frac{x}{u}}$
+          Taking the inverse:
+          $\dfrac{z}{2\sqrt{\alpha t}} = \text{erf}^{-1}(0.8)$
+        </li>
+        <li class="fragment">
+          $z_{litho} = \text{erf}^{-1}(0.8) 2 \sqrt{\alpha t}$
         </li>
       </ul>
     </div>
@@ -406,56 +409,22 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h3>Half-space model predictions</h3>
-
-  <p style="font-size: 0.8em">
-  Assuming $T_a = 1300\ K$, $T_0 = 273\ K$, and $\alpha = 1\ \frac{mm^2}{s}$
-  </p>
-  <img src="" width="80%">
-</section>
-
-<section>
-  <h3>Comparison to observations</h3>
+  <h3>Half-space model thickness predictions</h3>
 
   <div class="container" style="margin-top: 5%;">
-    <div class="col">
-      <img src="" width="100%">
+    <div class="col-img">
+      <p style="font-size: 0.6em">
+      Assuming $T_a = 1300\ K$, $T_0 = 273\ K$, and $\alpha = 1\ \frac{mm^2}{s}$
+      </p>
+      <img src="./lithospheric-thickness-halfspace-isotherms.png" width="100%">
     </div>
-    <div class="col">
+    <div class="col-text">
       <ul>
         <li class="fragment">
-          Lithospheric thickness from Rayleigh wave dispersion data
-          (<a href="https://doi.org/10.1126/science.186.4159.141">Leeds et al., 1974</a>).
+          Cannot fit all observations.
         </li>
         <li class="fragment">
-          Can't fit young and old lithosphere with same isotherm.
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-<section>
-  <h2>Up next: the oceanic lithosphere</h2>
-
-  <div class="container" style="margin-top: 5%;">
-    <div class="col">
-      <img src="density-pratt.png" width="100%">
-    </div>
-    <div class="col">
-      <ul>
-        <li>
-          What explains the decreased density at mid-ocean ridges?
-        </li>
-        <li>
-          How is it created?
-        </li>
-        <li>
-          What is it's internal structure?
-        </li>
-        <li>
-          How does it evolve over time?
+          No single isotherm fits young and old lithosphere simultaneously.
         </li>
       </ul>
     </div>
@@ -464,16 +433,14 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 
 <!-- =============================================================================== -->
 
-<section>
-  <h2>Data sources</h2>
+<section data-markdown>
+  <textarea data-template>
+    ### Data sources
 
-  <ul style="font-size: 1em">
-    <li>
-    </li>
-    <li>
-    </li>
-  </ul>
-
+    * Global heat flow grid from [Lucazeau (2019)](https://doi.org/10.1029/2019GC008389).
+    * Lithospheric thickness versus age of the oceanic lithosphere of the Pacific Ocean from [Leeds et al. (1974)](https://doi.org/10.1126/science.186.4159.141).
+    * Heat flow of oceanic lithosphere data compiled from [Davis et al. (1984)](https://doi.org/10.1111/j.1365-246X.1984.tb01962.x), [Sclater et al. (1976)](https://doi.org/10.1029/JB081i017p02997), and [Lister et al. (1990)](https://doi.org/10.1111/j.1365-246X.1990.tb04586.x).
+  </textarea>
 </section>
 
 <!-- =============================================================================== -->
