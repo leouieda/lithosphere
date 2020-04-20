@@ -460,6 +460,63 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   </div>
 </section>
 
+<section>
+  <h3>Heat flow for half-space cooling</h3>
+
+    <ul>
+      <li class="fragment">
+        From <a href="https://en.wikipedia.org/wiki/Thermal_conduction#Fourier's_law">Fourier's law</a>
+        the heat flow (or flux) is:
+        $q = -k \dfrac{\partial T}{\partial z}$
+      </li>
+      <li class="fragment">
+        $k$ is the <a href="https://en.wikipedia.org/wiki/Thermal_conductivity">thermal conductivity</a>
+      </li>
+      <li class="fragment">
+        We want to calculate $q = q_0$ at the surface $z=0$
+      </li>
+      <li class="fragment">
+        Substituting for the half-space model*:
+        $q_0 = k \dfrac{T_a - T_0}{\sqrt{\pi \alpha t}}$
+      </li>
+    </ul>
+  <p class="fragment attribution" style="margin-top: 5%">
+    *See "Geodynamics" section 4.15 for a derivation. (The sign here is flipped
+    because most data have positive flux upward instead of downward).
+  </p>
+</section>
+
+<section>
+  <h3>Half-space model heat flow predictions</h3>
+
+  <div class="container" style="">
+    <div class="col-img">
+      <img src="./lithospheric-heat-flow-halfspace.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Predictions match younger lithosphere well.
+        </li>
+        <li>
+          Model predictions too small for older lithosphere.
+        </li>
+        <li>
+          Half-space model cools indefinitely ($\lim_{t \to \infty} = T_0$)
+        </li>
+        <li>
+          In reality there is probably basal heating from convection.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Conductive cooling:</h1>
+  <h2>Plate model (PM)</h2>
+</section>
+
 <!-- =============================================================================== -->
 
 <section data-markdown>
