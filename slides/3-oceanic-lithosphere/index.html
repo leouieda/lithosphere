@@ -517,6 +517,194 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <h2>Plate model (PM)</h2>
 </section>
 
+<section>
+  <h3>Model setup</h3>
+  <ul>
+    <li>
+      For older lithosphere, need to account for basal heating due to
+      convection.
+    </li>
+    <li>
+      Instead of a half-space, use a plate of thickness $L$.
+    </li>
+    <li>
+      $L$ is the thickness of the lithosphere for large $t$.
+    </li>
+    <li>
+      Same model setup as before but different boundary conditions.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Boundary conditions</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="halfspace-model-time.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Profile is at asthenosphere temperature $T=T_a$ at $t=0$ (ridge).
+        </li>
+        <li class="fragment">
+          The top of the lithosphere $z=0$ is at a constant temperature
+          $T = T_0$.
+        </li>
+        <li class="fragment">
+          <strong>New:</strong>
+          The bottom of the lithosphere $z=L$ is at a constant temperature
+          $T = T_a$ for $t>0$.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <p style="margin-top: 5%">
+  The solution is more complicated than the half-space model
+  </p>
+  <p style="font-size: 0.8em; margin: 6% 0">
+    $
+    T(t) = T_0 + (T_a - T_0) \left[
+      \dfrac{z}{L} + \sum\limits_{n=1}^{\infty}
+      \dfrac{2}{\pi n} \exp\left(
+        -\dfrac{\alpha n^2 \pi^2 t}{L^2}
+      \right)
+      \sin\left(
+        \dfrac{n \pi z}{L}
+      \right)
+    \right]
+    $
+  </p>
+  <p>In practice, we truncate the sum at some value of $n$.</p>
+  <p class="attribution" style="margin-top: 10%">
+    See "Geodynamics" sections 4.17 (the derivation is actually in another
+    book).
+  </p>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <p style="font-size: 0.7em; margin-top: 5%;">
+      Assuming: $T_0 = 273\ K$ $T_a = 1300\ K$ $\alpha = 1\ mm^2/s$ $L = 95\ km$
+  </p>
+
+  <div class="container" style="">
+    <div class="col">
+      <img src="./plate-temperature.png" width="100%">
+    </div>
+    <div class="col fragment">
+      <img src="./halfspace-temperature.png" width="100%">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Heat flow for plate cooling</h3>
+
+    <ul>
+      <li class="fragment">
+        Apply <a href="https://en.wikipedia.org/wiki/Thermal_conduction#Fourier's_law">Fourier's law</a>
+        once more:
+        $q = -k \dfrac{\partial T}{\partial z}$
+      </li>
+      <li class="fragment">
+        We want to calculate $q = q_0$ at the surface $z=0$
+      </li>
+      <li class="fragment">
+        Substituting for the plate model*:
+        $
+        q_0 = k \dfrac{T_a - T_0}{L} \left[
+          1 + \sum\limits_{n=1}^{\infty}
+          2\exp\left(
+            -\dfrac{\alpha n^2 \pi^2 t}{L^2}
+          \right)
+        \right]
+        $
+      </li>
+    </ul>
+  <p class="fragment attribution" style="margin-top: 5%">
+    *There is no derivation of this in "Geodynamics".
+    <br>
+    The trick is to remember that we're calculating at $z=0$ so the cosine will
+    be equal to 1.
+  </p>
+</section>
+
+<section>
+  <h3>Plate model heat flow predictions</h3>
+
+  <div class="container" style="">
+    <div class="col-img">
+      <img src="./lithospheric-heat-flow-plate.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Matches the half-space model for younger lithosphere.
+        </li>
+        <li>
+          Also able to predict older lithosphere flux for $L=95\ km$.
+        </li>
+        <li>
+          Basal heating has large effect at $t > 50\ Myr$.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Wrap up</h1>
+</section>
+
+<section>
+  <h3>What we learned today</h3>
+
+  <div class="container" style="">
+    <div class="col">
+      <img src="./lithospheric-heat-flow-plate.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Practical</h3>
+
+  Calculate the bathymetry using isostasy.
+  <div class="container" style="">
+    <div class="col">
+      <img src="./lithospheric-heat-flow-plate.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- =============================================================================== -->
 
 <section data-markdown>
