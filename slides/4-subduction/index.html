@@ -1,0 +1,308 @@
+<!--
+Lecture slides for ENVS 398 Advanced Geodynamics
+===============================================================================
+-->
+
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="../js/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="../js/revealjs/css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../js/revealjs/lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- FontAwsome icons -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '../js/revealjs/css/print/pdf.css' : '../js/revealjs/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Page title -->
+    <title>
+        Subduction
+        -
+        ENVS398 Advanced Geodynamics
+    </title>
+
+</head>
+
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Slides are sections -->
+<!-- =============================================================================== -->
+
+<section data-background-image="../img/background.svg"
+         data-background-repeat="no-repeat"
+         data-background-position="center"
+         >
+  <p style="font-size: 0.6em; line-height: 1.5em; margin-bottom: 10%; text-align: center;">
+    ENVS398 Advanced Geodynamics
+    |
+    Part 2 - The Lithosphere
+  </p>
+  <h1>
+      Subduction
+  </h1>
+  <p style="font-size: 0.5em; margin-top: 15%; text-align: center;">
+    <i class="fas fa-user"></i> Leonardo Uieda
+    <i style="margin-left: 10px;" class="fas fa-envelope"></i> uieda@liverpool.ac.uk
+    <i style="margin-left: 10px;" class="fas fa-building"></i> Herdman Building - A2.06
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Learning objectives
+
+    Understand the processes that happen in the lithosphere associated with
+    subduction:
+
+    * Imaging slab geometry
+    * Flexure of the lithosphere in convergent margins
+    * How subduction appears in gravity, topography, and bathymetry
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+
+<section data-markdown>
+  <textarea data-template>
+    * Subduction is a big part of global tectonics
+    * Part of convenction in the mantle
+    * Important global cycles: water and carbon
+    * Understanding subduction is key to understanding the deep Earth
+  </textarea>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    # Why does it happen?
+
+    * Heat flow data and models shows that plates cool away from the ridge
+    * As the plate cools, it gets denser
+    * When the density is greater than that of the asthenosphere:
+      * Gravitational instability
+      * Plate sinks into asthenosphere
+    * Sinking slab pulls the plate behind it (*slab pull*).
+  </textarea>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    # Imaging subducting slabs
+
+    * Subducting plates heats and deforms causing deep earthquakes (70-300km)
+    * This region is known as the Wadati-Benioff zone
+    * Surrounding asthenosphere ductile and cannot cause earthquakes
+    * Tracking the hypocenters gives an image of the slab
+    * Still an important component to our knowledge of slab geometry
+      (for example, the Slab2 model uses it https://doi.org/10.1126/science.aat4723)
+  </textarea>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    # Flexure of the lithosphere
+
+    * Subduction causes the lithosphere to bend
+    * Downward deflecton causes trenches
+    * Bending also causes a forebulge
+    * Can be modelled by an elastic plate under and end load
+
+  </textarea>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    # Plate flexure under an end load
+
+    * Layout equations for the bending
+    * A-dimensional displacements
+    * How well models can fit this (we'll do it in the practical)
+  </textarea>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    # Gravity observations
+
+    * Disturbances in the subduction
+    * Why it looks like it does
+    * Can we model this?
+  </textarea>
+</section>
+
+<section>
+  <h1>Wrap up</h1>
+</section>
+
+<section>
+  <h3>What we learned today</h3>
+
+</section>
+
+<section>
+  <h3>Practical</h3>
+
+  <div class="container" style="">
+    <div class="col">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section data-markdown>
+  <textarea data-template>
+    ### Data sources
+
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Source code</h2>
+
+  <p>
+  Python code for making the figures shown in this lecture are available in a
+  Jupyter notebook:
+  </p>
+
+  <ul style="font-size: 1em">
+    <li>
+      <a
+        href="https://github.com/leouieda/envs398/blob/master/slides/4-subduction/make_figures.ipynb">view online (static)</a>
+    </li>
+    <li>
+      <a
+        href="https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%2Fslides%2F4-subduction%2Fmake_figures.ipynb%3Fautodecode">run online with Binder</a>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>References</h2>
+
+  <ul style="font-size: 0.7em">
+    <li>
+      Sections 3.17 and 9.6, "The Solid Earth" by C. M. R. Fowler.
+    </li>
+    <li>
+      Section 4.29, "Geodynamics" by Donald Turcotte and Gerald Schubert.
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-left"></i> Back:
+      <a target="_blank" href="../3-oceanic-lithosphere/">Lecture 3 - Oceanic Lithosphere</a>
+    </li>
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../5-basins/">Lecture 5 - Foreland and Extensional Basins </a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- =============================================================================== -->
+
+<section>
+
+  <p style="font-size: 1.6em">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  </p>
+
+  <p style="font-size: 0.8em;">
+  "ENVS398 Advanced Geodynamics"
+  by <a href="https://www.leouieda.com">Leonardo Uieda</a> is licensed under a
+  <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution 4.0 International License</a>.
+  </p>
+
+  <p style="font-size: 0.8em;">
+  <i class="fab fa-github"></i>
+  Source code:
+  <a href="https://github.com/leouieda/envs398">leouieda/envs398</a>
+  </p>
+
+</section>
+
+<!-- =============================================================================== -->
+
+</div>
+</div>
+
+<!--
+Placed at the end of the document so the pages load faster
+==========================================================
+-->
+
+<script src="../js/revealjs/lib/js/head.min.js"></script>
+<script src="../js/revealjs/js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        controls: true,
+        transition: 'none',
+        mouseWheel: true,
+        history: true,
+        fragmentInURL: true,
+        slideNumber: 'c/t',
+        dependencies: [
+            { src: '../js/revealjs/plugin/markdown/marked.js' },
+            { src: '../js/revealjs/plugin/markdown/markdown.js' },
+            { src: '../js/revealjs/plugin/notes/notes.js', async: true },
+            { src: '../js/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: '../js/revealjs/plugin/math-katex/math-katex.js', async: true }
+        ]
+    });
+</script>
+
+</body>
+</html>
