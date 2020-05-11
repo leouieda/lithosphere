@@ -258,51 +258,33 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h2>Boundary conditions</h2>
+  <h2>Solution</h2>
 
   <div class="container">
-    <div class="col-img">
-      <p style="">
-      Flexure under an end load:
-      </p>
+    <div class="col">
       <img src="flexure-setup.svg" width="100%">
     </div>
-    <div class="col-text">
+    <div class="col">
       <ul>
         <li>
-          No flexure away from the trench: $w \to 0$ as $x \to \infty$
+          <strong>Problem:</strong> In reality $M_0$ and $V_0$ are unknown.
         </li>
         <li>
-          Load $-V_0$ is applied at $x = 0$
-        </li>
-        <li>
-          The <em>bending moment</em> at $x= 0$ is $M_0$
+          Write solution as a function of $w_b$, $x_0$, and $x_b$.
         </li>
       </ul>
     </div>
   </div>
-</section>
-
-<section data-markdown>
-  <textarea data-template>
-    # Flexure of the lithosphere
-
-    * Subduction causes the lithosphere to bend
-    * Downward deflecton causes trenches
-    * Bending also causes a forebulge
-    * Can be modelled by an elastic plate under and end load
-
-  </textarea>
-</section>
-
-<section data-markdown>
-  <textarea data-template>
-    # Plate flexure under an end load
-
-    * Layout equations for the bending
-    * A-dimensional displacements
-    * How well models can fit this (we'll do it in the practical)
-  </textarea>
+  <p>
+    $
+    \dfrac{w}{w_b}(x) = e^{\pi/4} \sqrt{2}
+    \exp\left[ -\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
+    \sin\left[\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
+    $
+  </p>
+  <p style="margin-top: 3%">
+    Universal flexure profile
+  </p>
 </section>
 
 <section data-markdown>
