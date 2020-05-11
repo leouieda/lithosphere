@@ -401,14 +401,225 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <h1>Gravity disturbances</h1>
 </section>
 
-<section data-markdown>
-  <textarea data-template>
-    # Gravity observations
+<section>
+  <h2>Gravity and subduction zones</h2>
+  <div class="container">
+    <div class="col-img">
+  <img src="../2-isostasy/gravity-disturbance.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Large variation at subduction zones.
+        </li>
+        <li>
+          Characteristic positive-negative pair.
+        </li>
+        <li>
+          Andes, Caribbean, Japan, Mariana, Indonesia, etc.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    * Disturbances in the subduction
-    * Why it looks like it does
-    * Can we model this?
-  </textarea>
+<section>
+  <h2>Pacific plate subduction</h2>
+  <div class="container">
+    <div class="col-text">
+      <img src="./japan-relief.png" width="90%">
+    </div>
+    <div class="col-img">
+      <ul>
+        <li>
+          Examine a profile of gravity disturbances and bathymetry cutting
+          across Japan.
+        </li>
+        <li>
+          Include Sea of Japan (East Sea) and continental Asian for comparison.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Pacific plate subduction</h2>
+  <div class="container">
+    <div class="col-img">
+      <img src="./profiles-japan.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Positive-negative pair at subduction.
+        </li>
+        <li>
+          Close to zero in most of the Pacific plate.
+        </li>
+        <li>
+          Slightly positive in Sea of Japan and Asia.
+        </li>
+        <li>
+          Small values are expected when we have isostatic equilibrium.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Modeling the subducting plate</h2>
+  <div class="container">
+    <div class="col-img">
+      <img src="./bathymetry-japan.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Assume that the Eastern part is isostatically compensated.
+        </li>
+        <li>
+          Gravity disturbances of even layers that are compensated should be
+          zero.
+        </li>
+        <li>
+          Assume signal is entirely due to flexure (forebulge and trench).
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Modeling the subducting plate (continued)</h2>
+  <div class="container">
+    <div class="col-img">
+      <img src="./flexure-japan.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Calculate the plate flexure model predictions.
+        </li>
+        <li>
+          What is the anomalous density distribution associated with the
+          predicted flexure?
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Density model for the disturbance</h2>
+  <div class="container">
+    <div class="col-text">
+      <img src="./disturbance-subduction.svg" width="95%">
+    </div>
+    <div class="col-img">
+      <ul>
+        <li>
+          Gravity modelling is about stripping effects.
+        </li>
+        <li>
+          The disturbance is the observed gravity minus Normal gravity (from
+          the ellipsoid).
+        </li>
+        <li>
+          Assume that the ellipsoid is layered (including an ocean).
+        </li>
+        <li>
+          The density anomalies are what exists (real) minus what was removed
+          (normal).
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Gravity disturbance predictions</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./disturbance-predicted-japan.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Calculate model predictions using a Bouguer plate approximation:
+          $g = 2\pi G \rho w$
+        </li>
+        <li>
+          $w$ is the plate flexure model predictions
+        </li>
+        <li>
+          For the forebulge: $\rho = \rho_c - \rho_w$ (top) and
+          $\rho = \rho_m - \rho_c$ (bottom)
+        </li>
+        <li>
+          For the trench: $\rho = \rho_w - \rho_c$ (top) and
+          $\rho = \rho_c - \rho_m$ (bottom)
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Gravity disturbance predictions</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./disturbance-predicted-japan.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Fit is reasonable for most of the plate.
+        </li>
+        <li>
+          The plate flexure model + our density model explains the forebulge
+          signal.
+        </li>
+        <li>
+          The model cannot fit the trench signal
+          (observed disturbances are larger).
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Gravity disturbance predictions</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./disturbance-predicted-japan.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Model is incomplete at the trench.
+        </li>
+        <li>
+          Positive residual can mean:
+          <ul>
+            <li>our negative effects are too strong</li>
+            <li>there are positive effects missing from the model</li>
+          </ul>
+        </li>
+        <li>
+          Still an open question: How to include subducting slabs into 3D
+          gravity models? *
+        </li>
+      </ul>
+  <p class="attribution" style="margin-top: 5%">
+    For example, <a href="https://doi.org/10.5194/egusphere-egu2020-6625">Root et
+    al (2020)</a> presented preliminary work on this at
+  <a href="https://www.egu2020.eu/">EGU 2020</a>.
+  </p>
+    </div>
+  </div>
 </section>
 
 <section>
