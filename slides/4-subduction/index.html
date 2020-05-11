@@ -386,7 +386,9 @@ Lecture slides for ENVS 398 Advanced Geodynamics
           Calculate <em>effective elastic
             thickness</em> of the subducting lithosphere $T_e$ from:
           <p style="font-size: 0.7em;">
-            $D = \dfrac{E T_e^2}{12(1 - \nu^2)}$
+            $D = \dfrac{E T_e^3}{12(1 - \nu^2)}$
+            |
+            $Te \approx 28 km$
           </p>
         </li>
       </ul>
@@ -579,45 +581,12 @@ Lecture slides for ENVS 398 Advanced Geodynamics
         </li>
         <li>
           The plate flexure model + our density model explains the forebulge
-          signal.
+          and trench signals.
         </li>
         <li>
-          The model cannot fit the trench signal
-          (observed disturbances are larger).
+          The model cannot fit small scale variations in bathymetry.
         </li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Gravity disturbance predictions</h2>
-  <div class="container">
-    <div class="col">
-      <img src="./disturbance-predicted-japan.png" width="100%">
-    </div>
-    <div class="col">
-      <ul>
-        <li>
-          Model is incomplete at the trench.
-        </li>
-        <li>
-          Positive residual can mean:
-          <ul>
-            <li>our negative effects are too strong</li>
-            <li>there are positive effects missing from the model</li>
-          </ul>
-        </li>
-        <li>
-          Still an open question: How to include subducting slabs into 3D
-          gravity models? *
-        </li>
-      </ul>
-  <p class="attribution" style="margin-top: 5%">
-    For example, <a href="https://doi.org/10.5194/egusphere-egu2020-6625">Root et
-    al (2020)</a> presented preliminary work on this at
-  <a href="https://www.egu2020.eu/">EGU 2020</a>.
-  </p>
     </div>
   </div>
 </section>
@@ -626,53 +595,141 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <h1>Foreland basins</h1>
 </section>
 
-<section data-markdown>
-  <textarea data-template>
-    # Foreland basins
-
-    * Where they form
-    * Why their gravity looks like that
-    * Flexure models
-  </textarea>
-</section>
-
 <section>
-  <h1>Wrap up</h1>
-</section>
-
-<section>
-  <h3>What we learned today</h3>
-
-</section>
-
-<section>
-  <h3>Practical</h3>
-
-  <div class="container" style="">
+  <h2>Flexure on continental side</h2>
+  <div class="container">
     <div class="col">
+      <img src="./profiles-andes.png" width="100%">
     </div>
     <div class="col">
       <ul>
         <li>
+          Flexure under the cordillera load should happen on both sides.
         </li>
         <li>
+          Gravity disturbance is negative in the foreland region as well.
         </li>
         <li>
+          Why don't we see a trench on the continental side?
         </li>
-        <li>
+        <li class="fragment">
+          Depressions tend to be filled by sediments.
         </li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- =============================================================================== -->
+<section>
+  <h2>Observations</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./andes-observations.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Need to use basement depth instead of topography.
+        </li>
+        <li>
+          Estimates can come from seismology (but might not be very accurate).
+        </li>
+        <li>
+          Observed gravity disturbances are somewhat correlated with basement
+          depth.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Flexure model</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./flexure-andes.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Treat basement depth as flexure ($w$).
+        </li>
+        <li>
+          Estimate $x_0$, $x_b$, $w_b$ for plate flexure model.
+        </li>
+        <li>
+          Effective elastic thickness: $Te \approx 118 km$
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Fit to gravity disturbances</h2>
+  <div class="container">
+    <div class="col">
+      <img src="./disturbance-predicted-andes.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Same setup used for the Pacific but using sediments
+          (2400 kg/m³) instead of water.
+        </li>
+        <li>
+          Cannot fit observations with reasonable density and $T_e$ values.
+        </li>
+        <li>
+          Our density model is likely wrong or incomplete.
+        </li>
+        <li>
+          Expected since continental lithosphere is more complex and
+          heterogeneous than oceanic.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section data-markdown>
   <textarea data-template>
-    ### Data sources
+    ## Wrap up
 
+    * Models of plate flexure under an end load serve well for oceanic lithosphere
+    * A 2 layer anomalous density model is able to fit gravity disturbances at
+      trenches
+    * Flexure in the continental part is filled by sediments (foreland basins)
+    * Simple density models fail to explain the gravity observations in the
+      continental part.
   </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Data sources</h2>
+
+  <ul style="font-size: 1em">
+    <li>
+      Global seismicity:
+      <a href="https://www.globalcmt.org/">Global CMT</a>
+    </li>
+    <li>
+      ETOPO1 global relief:
+      <a href="https://doi.org/10.7289/V5C8276M">NOAA</a>
+    </li>
+    <li>
+      Gravity data from the EIGEN-6C4 spherical harmonic model downloaded from
+      <a href="http://icgem.gfz-potsdam.de/home">ICGEM</a>
+    </li>
+    <li>
+      Sediment thickness map of the world by
+      <a href="https://igppweb.ucsd.edu/~gabi/sediment.html">Gabi Laske and Guy
+        Masters</a>
+    </li>
+  </ul>
+
 </section>
 
 <!-- =============================================================================== -->
@@ -705,13 +762,12 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 
   <ul style="font-size: 0.7em">
     <li>
-      Sections 3.17 and 9.6, "The Solid Earth" by C. M. R. Fowler.
+      Section 9.6, "The Solid Earth" by C. M. R. Fowler.
     </li>
     <li>
-      Section 4.29, "Geodynamics" by Donald Turcotte and Gerald Schubert.
+      Sections 3.16-17 and 4.29, "Geodynamics" by Donald Turcotte and Gerald Schubert.
     </li>
   </ul>
-
 </section>
 
 <!-- =============================================================================== -->
@@ -720,9 +776,6 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   <ul class="fa-ul">
     <li> <i class="fa-li fas fa-arrow-left"></i> Back:
       <a target="_blank" href="../3-oceanic-lithosphere/">Lecture 3 - Oceanic Lithosphere</a>
-    </li>
-    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
-      <a target="_blank" href="../5-basins/">Lecture 5 - Foreland and Extensional Basins </a>
     </li>
   </ul>
 </section>
