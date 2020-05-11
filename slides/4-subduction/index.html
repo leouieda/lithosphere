@@ -277,7 +277,7 @@ Lecture slides for ENVS 398 Advanced Geodynamics
   </div>
   <p>
     $
-    \dfrac{w}{w_b}(x) = e^{\pi/4} \sqrt{2}
+    w(x) = w_b\ e^{\pi/4} \sqrt{2}
     \exp\left[ -\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
     \sin\left[\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
     $
@@ -288,34 +288,88 @@ Lecture slides for ENVS 398 Advanced Geodynamics
 </section>
 
 <section>
-  <h2>Universal flexure profile</h2>
+  <h2>Comparing to observations</h2>
 
   <div class="container">
     <div class="col-img">
-  <img src="universal-flexure-profile.png" width="100%">
-      <p style="font-size: 0.7em;">
-        $
-        \dfrac{w}{w_b}(x) = e^{\pi/4} \sqrt{2}
-        \exp\left[ -\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
-        \sin\left[\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right]
-        $
-      </p>
+      <img src="mariana-flexure-observed.png" width="100%">
     </div>
     <div class="col-text">
       <ul>
         <li>
-          $x_0$, $x_b$, and $w_b$ can be determined from bathymetry.
+          Observed bathymetry at the Mariana trench (Pacific plate side).
         </li>
         <li>
-          Convert
-        </li>
-        <li>
-          Compare model and observations
-        </li>
-        <li>
-
+          Convert bathymetry to flexure $w$ by subtracting a reference value.
         </li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Comparing to observations (continued)</h2>
+
+  <div class="container">
+    <div class="col-img">
+      <img src="mariana-flexure-scaled.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Determine $x_0$, $x_b$, and $w_b$ from the graph.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Comparing to observations (continued)</h2>
+
+  <div class="container">
+    <div class="col-img">
+      <img src="mariana-flexure-predicted.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+        Use the equation for $w(x)$ to predict observations.
+        </li>
+        <li>
+          Good agreement between model and observations.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Information about the lithosphere</h2>
+
+  <div class="container">
+    <div class="col-img">
+      <img src="mariana-flexure-predicted.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Calculate flexural rigidity from $x_0$ and $x_b$:
+          <p style="font-size: 0.7em;">
+          $D = \dfrac{64 (\rho_m - \rho_w) g}{\pi^4}(x_b - x_0)^4$
+          </p>
+        </li>
+        <li>
+          Calculate <em>effective elastic
+            thickness</em> of the subducting lithosphere $T_e$ from:
+          <p style="font-size: 0.7em;">
+            $D = \dfrac{E T_e^2}{12(1 - \nu^2)}$
+          </p>
+        </li>
+      </ul>
+  <p class="attribution" style="margin-top: 5%">
+    See "Geodynamics" section 3.16-17.
+  </p>
     </div>
   </div>
 </section>
