@@ -17,6 +17,7 @@ To launch Jupyter lab online and run the code in `labs` and `slides` folders
 1. [Plate tectonics](https://www.leouieda.com/envs398/slides/1-plate-tectonics/) ([code](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/slides/1-plate-tectonics/make_figures.ipynb))
 2. [Isostasy and plate flexure](https://www.leouieda.com/envs398/slides/2-isostasy/) ([code](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/slides/2-isostasy/make_figures.ipynb))
 3. [Oceanic Lithosphere](https://www.leouieda.com/envs398/slides/3-oceanic-lithosphere/) ([code](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/slides/3-oceanic-lithosphere/make_figures.ipynb))
+4. [Subduction](https://www.leouieda.com/envs398/slides/4-subduction/) ([code](https://nbviewer.jupyter.org/github/leouieda/envs398/blob/master/slides/4-subduction/make_figures.ipynb))
 
 ## Labs
 
