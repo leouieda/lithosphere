@@ -14,3 +14,5 @@ dependencies:
     - xarray
     - netcdf4
     - pygmt
+    # To serve slides
+    - livereload
