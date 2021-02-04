@@ -1,0 +1,16 @@
+name: lithosphere
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python=3.8
+    - pip
+    - numpy
+    - scipy
+    - pandas
+    - matplotlib
+    - jupyter
+    - jupyterlab
+    - xarray
+    - netcdf4
+    - pygmt
