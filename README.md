@@ -1,15 +1,14 @@
-# ENVS398 Advanced Geodynamics
+# Introduction to lithosphere dynamics
 
-Part 2 of the module covering the lithosphere.
+Part of the module ENVS398 Global Geophysics and Geodynamics of the University
+of Liverpool, UK.
 
 All labs are made with Jupyter notebooks and freely available data.
-The code and data used to make the figures for each lecture is 
+The code and data used to make the figures for each lecture is
 available (see the `make_figures.ipynb` notebooks for each lecture in `slides`).
 
 To launch Jupyter lab online and run the code in `labs` and `slides` folders
 (the `.ipynb` files), click on this button:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%3Fautodecode)
 
 ## Lectures
 
@@ -27,8 +26,6 @@ To launch Jupyter lab online and run the code in `labs` and `slides` folders
 
 ## License
 
-"ENVS398 Advanced Geodynamics"
-by <a href="https://www.leouieda.com">Leonardo Uieda</a> is licensed under a
-<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
-Attribution 4.0 International License</a>.
-</p>
+This material is made available under the
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0)
+license.
