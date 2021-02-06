@@ -19,7 +19,8 @@ ENVS398 Global Geophysics and Geodynamics
 
 </div>
 
-## Instructors: **[Leonardo Uieda](https://www.leouieda.com) & Andy Biggin**
+## Instructors: **[Leonardo Uieda](https://www.leouieda.com)** <span style="margin: 0 10px">&</span> **Andy Biggin**
+
 
 <i class="fas fa-envelope fa-fw"></i> [Leonardo.Uieda@liverpool.ac.uk](mailto:Leonardo.Uieda@liverpool.ac.uk)
 <span style="margin: 0 20px">|</span>
@@ -27,111 +28,108 @@ ENVS398 Global Geophysics and Geodynamics
 <span style="margin: 0 20px">|</span>
 [<i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i> CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
 
-
 ---
 
-# Learning objectives
+# Aims
 
 <div class="lefted">
 
-1. meh
+1. Understand **lithospheric-scale tectonic processes**
+1. Introduce you to **research frontiers** in core and mantle dynamics and evolution
+1. Practice mathematical **modelling** of tectonic processes
+1. Improve your computer **programming** skills
+1. Develop skills for understanding, synthesising and communicating
+   **peer-reviewed literature**
 
 </div>
 
 ---
 
-# Normal slide
+# Learning outcomes
+
+<div class="lefted">
+
+1. Describe and explain principles and details of **active tectonic processes**
+2. Apply **mathematical methods** to describe tectonic processes
+3. Describe and explain **current theories and controversies** regarding the
+   dynamics of Earth from its surface to core and the methods used to study
+   these topics
+
+</div>
+
+---
+
+# Course structure
 
 <div class="container">
-<div class="col-large">
+<div class="col-left">
 
-![](assets/title-slide-background.jpg)
+Weeks 1-6:
 
-</div>
-<div class="col-small">
-
-A image with:
-
-* A bullet point
-* description of it
-
-`$ J(\theta_0,\theta_1) = \sum_{i=0} \dfrac{x_i}{y} \sin x_i $`
+* **Instructor:** Andy
+* **Topic:** Mantle and core
+* **Delivery:**
+    * Recorded lectures
+    * Reading scientific papers
+    * Small group discussion
 
 </div>
+<div class="col-right fragment">
+
+Weeks 7-12:
+
+* **Instructor:** Leo
+* **Topic:** Lithosphere
+* **Delivery:**
+    * Recorded lectures
+    * Synchronous computer practicals
+    * Coding exercises
+
+</div>
 </div>
 
-<div class="r-stretch bottom-right">
+---
 
-Image from [this place](http://www.leouieda.com)
+# Assessment
+
+<div class="lefted">
+
+1. Essay on the core and mantle (worth 25%)
+1. Poster on the lithosphere (worth 25%)
+1. Open book exam: half core/mantle + half lithosphere<br>(worth 50%)
 
 </div>
 
 ---
 
-# Something else
+# Communication
 
-<div class="r-stretch bottom-right">
+Announcements will be posted on Canvas.
 
-Another citation or funny note.
+Zoom/Teams links will be on your timetable and/or Canvas.
 
-</div>
+Links may change! We will announce on Canvas if they do.
+
+Ask questions in the Canvas "Discussions" page.
+
+**Check the Canvas page regularly (weekly)!**
 
 ---
 
-<!-- .slide: data-background-image="assets/title-slide-background.jpg" data-background-repeat="no-repeat" data-background-opacity="0.25" data-background-color="#000000" data-background-position="center" -->
+# Expectations
 
-<div class="r-stretch quote">
+Our goal is to take you closer to the state-of-the-art.
 
-"Something or other"
+This will be a fairly intense module.
 
-</div>
+With dedication, you can get **a lot** out of it.
 
-<div class="bottom-left">
-
-Another citation or funny note.
-
-</div>
+We hope you'll **have fun** (we certainly do)!
 
 ---
 
 <!-- END MATTER -->
 <!-- ====================================================================== -->
-
-<div class="centered">
-<div>
-
-## Source code
-
-Python code for making the figures shown in this lecture are available in a
-Jupyter notebook:
-
-* View/download
-* Run the code on Binder
-
-</div>
-</div>
-
----
-
-## Data sources
-
-<div class="lefted">
-
-* List of data sources
-
-</div>
-
----
-
-## References
-
-<div class="lefted">
-
-* List of references
-
-</div>
-
----
 
 <!-- .slide: class="slide-license" -->
 
