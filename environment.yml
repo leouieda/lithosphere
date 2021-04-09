@@ -3,7 +3,7 @@ channels:
     - defaults
     - conda-forge
 dependencies:
-    - python=3.8
+    - python==3.8
     - pip
     - numpy
     - scipy
@@ -12,7 +12,16 @@ dependencies:
     - jupyter
     - jupyterlab
     - xarray
+    - cartopy
     - netcdf4
     - pygmt
     # To serve slides
     - livereload
+    # Fatiando packages
+    - verde==1.6.0
+    - boule
+    - pip:
+      - harmonica==0.2.0
+    # To speed up Verde
+    - pykdtree
+    - numba
