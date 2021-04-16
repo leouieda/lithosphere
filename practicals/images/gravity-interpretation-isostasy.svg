@@ -12,13 +12,52 @@
    viewBox="0 0 354.33072 149.97186"
    id="svg2"
    version="1.1"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="gravity-interpretation-isostasy.svg"
    inkscape:export-filename="gravity-interpretation-isostasy.png"
    inkscape:export-xdpi="480.09012"
    inkscape:export-ydpi="480.09012">
   <defs
      id="defs4">
+    <marker
+       style="overflow:visible"
+       id="StopM"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="StopM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0.0,5.65 L 0.0,-5.65"
+         id="path1231" />
+    </marker>
+    <marker
+       inkscape:stockid="DistanceStart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="DistanceStart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <g
+         id="g2300"
+         style="stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1">
+        <path
+           id="path2306"
+           d="M 0,0 L 2,0"
+           style="fill:#000000;stroke:#000000;stroke-width:1.15;stroke-linecap:square;stroke-opacity:1;fill-opacity:1" />
+        <path
+           id="path2302"
+           d="M 0,0 L 13,4 L 9,0 13,-4 L 0,0 z "
+           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;fill-opacity:1" />
+        <path
+           id="path2304"
+           d="M 0,-4 L 0,40"
+           style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-opacity:1;fill-opacity:1" />
+      </g>
+    </marker>
     <marker
        inkscape:stockid="Arrow2Send"
        orient="auto"
@@ -1145,6 +1184,34 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="StopM-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="StopM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,5.65 V -5.65"
+         id="path1231-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1560"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="StopM"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4)"
+         style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,5.65 V -5.65"
+         id="path1558" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1255,5 +1322,36 @@
            y="914.91394"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:1.25;font-family:'Noto SAns';-inkscape-font-specification:'Noto SAns'">gravity disturbance</tspan></text>
     </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.93750005;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#StopM);marker-end:url(#StopM)"
+       d="m 100.67691,937.14536 2.90621,20.32936"
+       id="path180" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.4311px;line-height:0;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:discretionary-ligatures;letter-spacing:1.30733px;word-spacing:0px;stroke-width:0.653665"
+       x="106.08862"
+       y="953.6983"
+       id="text1534"><tspan
+         sodipodi:role="line"
+         id="tspan1532"
+         x="106.08862"
+         y="953.6983"
+         style="stroke-width:0.653665">h</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.9375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopM-3);marker-end:url(#StopM-3)"
+       d="m 112.89248,1029.2354 3.5047,28.096"
+       id="path180-7"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:18.7181px;line-height:0;font-family:Arial;-inkscape-font-specification:Arial;font-variant-ligatures:discretionary-ligatures;letter-spacing:1.40386px;word-spacing:0px;stroke-width:0.701929"
+       x="119.41449"
+       y="1045.3306"
+       id="text1777"><tspan
+         sodipodi:role="line"
+         id="tspan1775"
+         x="119.41449"
+         y="1045.3306"
+         style="stroke-width:0.701929">r</tspan></text>
   </g>
 </svg>
