@@ -1,4 +1,4 @@
-@basefontsize: 70px;
+@basefontsize: 66px;
 @lightcolor: #ffffff;
 
 .reveal {
@@ -175,10 +175,10 @@
     }
     p {
         font-size: @basefontsize;
-        margin-bottom: 3%;
+        line-height: @basefontsize * 1.4;
+        margin-bottom: 4%;
     }
     ul {
-        /*margin-top: 3%;*/
         font-size: @basefontsize * 0.8;
         &.fa-ul {
             list-style-type: none;
@@ -237,6 +237,7 @@
         }
         p {
             font-size: @basefontsize * 0.5;
+            margin-bottom: 0;
         }
         .title-license p {
             font-size: @basefontsize * 0.5;
@@ -264,7 +265,8 @@
             }
         }
         p {
-            font-size: @basefontsize * 0.7;
+            font-size: @basefontsize * 0.75;
+            line-height: @basefontsize * 1.1;
         }
     }
 }
