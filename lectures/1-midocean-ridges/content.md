@@ -269,12 +269,11 @@ temperature $T = T_0$
 
 ---
 
-# Solution
+Solving the diffusion equation and applying the boundary conditions  we get
+temperature as a function of time and depth:
 
 <div class="container">
 <div class="col-left small">
-
-Temperature as a function of time and depth:
 
 $$
 T(z, t) = T_0 + (T_a - T_0)\ \text{erf}
@@ -283,14 +282,9 @@ T(z, t) = T_0 + (T_a - T_0)\ \text{erf}
 \right)
 $$
 
-<div class="tiny">
-
-
-</div>
-
 <div class="fragment">
 
-Switching back to $x$:
+Then we can switch back to $x$:
 
 $$
 T(x, z) = T_0 + (T_a - T_0)\ \text{erf}
@@ -307,7 +301,7 @@ $$
 <img src="../assets/halfspace-model-time.svg">
 
 $
-\text{erf}(z) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^z e^{-n^2} dn
+\text{erf}(x) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^x e^{-n^2} dn
 $
 is the [error function](https://en.wikipedia.org/wiki/Error_function).
 
@@ -322,12 +316,258 @@ See "Geodynamics" sections 4.15 and 4.16 for a derivation.
 
 ---
 
+# Example
+
+<div class="container">
+<div class="col-large">
+
+<img src="../assets/halfspace-temperature.png">
+
+</div>
+<div class="col-small">
+
+Calculate $T(z, t)$ for a range of times and depths assuming:
+
+* $T_0 = 273\ K$
+* $T_a = 1300\ K$
+* $\alpha = 1\ mm^2/s$
+
+</div>
+</div>
+
+---
+
+# Comparing with observations
+
+Now that we have a model, we can compare **observations** to values predicted
+by the model.
+
+We can't measure temperature up to depths of 100s of km.
+
+So we need to use our model to predict other observables, like **heat flow** at
+the surface and **bathymetry**.
+
+---
+
+# Heat flow
+
+<div class="container">
+<div class="col-large tiny">
+
+<img src="../assets/global-heat-flow.png">
+
+Like much of geophysics, this map is actually an interpolation of several
+scattered data sources
+[(Lucazeau, 2019)](https://doi.org/10.1029/2019GC008389).
+
+</div>
+<div class="col-small small">
+
+Can be measured in ocean bottom drilling operations (expensive)
+
+Difficult to remove effects of hydrothermal convection in younger lithosphere
+
+Data compilations exist that try to control for these effects
+
+</div>
+</div>
+
+---
+
+# Heat flow for half-space cooling
+
+<div class="small">
+
+From [Fourier's law](https://en.wikipedia.org/wiki/Thermal_conduction#Fourier's_law),
+heat flow is:
+$\ q(z) = -k \dfrac{\partial T}{\partial z}$
+
+We want to calculate heat flow at the surface $q(z=0) = q_0$
+
+Substituting $T$ from the half-space model\*:
+$\ q_0(t) = k \dfrac{T_a - T_0}{\sqrt{\pi \alpha t}}$
+
+Assuming we know $T_a$, $T_0$, $\alpha$, and $k$ we can calculate heat flow
+<br>
+as a function of lithospheric age
+
+</div>
+
+<div class="r-stretch bottom-left">
+
+$k$ is the [thermal conductivity](https://en.wikipedia.org/wiki/Thermal_conductivity)
+<br>
+\*See "Geodynamics" section 4.15 for a derivation
+(the sign here is flipped because most data have positive flow upward instead
+of downward)
+
+</div>
+
+---
+
+# Bathymetry
+
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/topography.png">
+
+[ETOPO1](https://doi.org/10.7289/V5C8276M) is also the result of the
+integration of several different data sources, including shipborne surveys and
+satellite data.
+
+</div>
+<div class="col-right small">
+
+Can be measured to high resolution from ships using
+[singlebeam and multibeam echosounders](https://en.wikipedia.org/wiki/Multibeam_echosounder)
+but at high cost and low spatial coverage
+
+Or from space with
+[satellite altimetry](https://en.wikipedia.org/wiki/Satellite_geodesy#Altimetry)
+for lower resolution and global coverage
+
+</div>
+</div>
+
+---
+
+# Bathymetry for half-space cooling
+
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/cooliing-and-bathymetry.svg">
+
+</div>
+<div class="col-right small">
+
+We know from gravity disturbances that ridges are in isostatic equilibrium
+
+At a compensation depth $D$ the mass of the column above any point $x$ must be
+the same
+
+At the ridge ($x = t = 0$), the total is the mass of asthenosphere plus the
+water column with depth $w_r$
+
+$$
+\rho_w w_r + \rho_a (D - w_r)
+$$
+
+</div>
+</div>
+
+<div class="r-stretch bottom-left">
+
+Assuming columns with unit area.
+
+</div>
+
+---
+
+# Bathymetry for half-space cooling
+
+
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/cooliing-and-bathymetry.svg">
+
+</div>
+<div class="col-right small">
+
+At a distance $x$, the total is sum of the mass of the asthenosphere,
+lithosphere, and water
+
+Assuming that the density of the lithosphere varies with depth $z$:
+
+$
+\rho_w w + \rho_a (D - L - w) + \int\limits_{w}^{w + L}\rho(z) dz
+$
+
+</div>
+</div>
+
+---
+
+# Bathymetry for half-space cooling
+
+
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/cooliing-and-bathymetry.svg">
+
+</div>
+<div class="col-right small">
+
+The density of the lithosphere will also depend on its **temperature**,
+which we can calculate as a function of $x$ and $z$ from our model
+
+Assuming density variations are due to thermal expansion:
+
+$$
+\rho(x, z) = \rho_a \left[1 - \alpha_V [T(x, z) - T_a]\right]
+$$
+
+</div>
+</div>
+
+<div class="r-stretch bottom-right">
+
+$\alpha_V$ is the coefficient of thermal expansion
+
+</div>
+
+---
+
+# Bathymetry for half-space cooling
+
+
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/cooliing-and-bathymetry.svg">
+
+</div>
+<div class="col-right small">
+
+Equating the total masses at the ridge and at $x$, substituting the density
+from thermal expansion, integrating, and converting $x$ back to $t$ we get\*:
+
+$$
+w(t) = w_r + \dfrac{2 \rho_a \alpha_V (T_a - T_0)}{\rho_a - \rho_w}
+\sqrt{\dfrac{\alpha t}{\pi}}
+$$
+
+</div>
+</div>
+
+<div class="r-stretch bottom-right">
+
+\*See "The Solid Earth" section 7.5.2 for a derivation.
+
+</div>
+
+---
+
+# Does it fit the data?
+
+Now that we can predict two observable quantities (heat flow and bathymetry as
+functions of lithospheric age), we can test the half-space cooling model.
+
+In the associated **practical** activity, we will implement the corresponding
+equations in Python and evaluate how well our model fits the available data.
+
+---
+
 # Reading
 
-For an detailed discussion and derivation of equations:
+For an detailed discussion and derivation of equations, refer to the excellent
+textbooks:
 
-* Chapter 7 section 5 of "The Solid Earth" by C. M. R. Fowler.
-* Chapter 4 sections 15-17 of "Geodynamics" by D. Turcotte and G. Schubert.
+* "The Solid Earth" by C. M. R. Fowler (chapter 7 section 5)
+* "Geodynamics" by D. Turcotte and G. Schubert (chapter 4 sections 15-17)
 
 ---
 

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:ns1="http://wanglongqi.github.io/WriteTeX"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -8,6 +6,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="169.5565mm"
@@ -15,7 +14,7 @@
    viewBox="0 0 169.5565 86.954224"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
    sodipodi:docname="cooliing-and-bathymetry.svg">
   <defs
      id="defs2">
@@ -139,6 +138,25 @@
          transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
          inkscape:connector-curvature="0" />
     </marker>
+    <g
+       id="g9309">
+      <symbol
+         overflow="visible"
+         id="symbol4806">
+        <path
+           style="stroke:none;"
+           d=""
+           id="path6025" />
+      </symbol>
+      <symbol
+         overflow="visible"
+         id="symbol2637">
+        <path
+           style="stroke:none;"
+           d="M 1.578125 -0.78125 C 1.484375 -0.390625 1.46875 -0.3125 0.671875 -0.3125 C 0.515625 -0.3125 0.40625 -0.3125 0.40625 -0.125 C 0.40625 0 0.484375 0 0.671875 0 L 3.984375 0 C 6.046875 0 8.015625 -2.109375 8.015625 -4.28125 C 8.015625 -5.6875 7.171875 -6.8125 5.671875 -6.8125 L 2.328125 -6.8125 C 2.140625 -6.8125 2.03125 -6.8125 2.03125 -6.625 C 2.03125 -6.5 2.109375 -6.5 2.3125 -6.5 C 2.4375 -6.5 2.625 -6.484375 2.734375 -6.484375 C 2.90625 -6.453125 2.953125 -6.4375 2.953125 -6.3125 C 2.953125 -6.28125 2.953125 -6.25 2.921875 -6.125 Z M 3.734375 -6.125 C 3.828125 -6.46875 3.84375 -6.5 4.28125 -6.5 L 5.34375 -6.5 C 6.3125 -6.5 7.140625 -5.96875 7.140625 -4.65625 C 7.140625 -4.171875 6.953125 -2.53125 6.09375 -1.4375 C 5.8125 -1.0625 5.03125 -0.3125 3.796875 -0.3125 L 2.671875 -0.3125 C 2.53125 -0.3125 2.515625 -0.3125 2.453125 -0.3125 C 2.359375 -0.328125 2.328125 -0.34375 2.328125 -0.421875 C 2.328125 -0.453125 2.328125 -0.46875 2.375 -0.640625 Z M 3.734375 -6.125 "
+           id="path756" />
+      </symbol>
+    </g>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -161,7 +179,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -170,7 +189,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -253,7 +272,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32883054"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.328831"
        x="22.513317"
        y="54.246887"
        id="text5957"><tspan
@@ -261,10 +280,10 @@
          id="tspan5955"
          x="22.513317"
          y="54.246887"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';stroke-width:0.32883054">lithosphere</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';stroke-width:0.328831">lithosphere</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32883054"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.328831"
        x="22.513317"
        y="84.360748"
        id="text5961"><tspan
@@ -272,10 +291,10 @@
          id="tspan5959"
          x="22.513317"
          y="84.360748"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';stroke-width:0.32883054">asthenosphere</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';stroke-width:0.328831">asthenosphere</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="88.449966"
        y="16.44364"
        id="text6183"><tspan
@@ -283,10 +302,10 @@
          id="tspan6181"
          x="88.449966"
          y="16.44364"
-         style="stroke-width:0.26458332">ridge</tspan></text>
+         style="stroke-width:0.264583">ridge</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="22.513317"
        y="35.003456"
        id="text6187"><tspan
@@ -294,7 +313,7 @@
          id="tspan6185"
          x="22.513317"
          y="35.003456"
-         style="stroke-width:0.26458332">water</tspan></text>
+         style="stroke-width:0.264583">water</tspan></text>
     <g
        id="g6474"
        transform="matrix(0.8,0,0,0.8,-56.770165,-63.807627)"
@@ -336,7 +355,7 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot6486"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.33333397px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        transform="scale(0.26458333)"><flowRegion
          id="flowRegion6488"><rect
            id="rect6490"
@@ -344,7 +363,8 @@
            height="66.601547"
            x="330.58832"
            y="167.69286" /></flowRegion><flowPara
-         id="flowPara6492" /></flowRoot>    <g
+         id="flowPara6492" /></flowRoot>
+    <g
        id="g1032"
        transform="translate(0,-7.6715262)">
       <g
@@ -509,7 +529,7 @@
     </g>
     <g
        id="g1666"
-       transform="matrix(0.8,0,0,0.8,-17.477333,3.1129241)"
+       transform="matrix(0.8,0,0,0.8,-17.477333,6.2879243)"
        ns1:text="$t_1 = \\frac{x_1}{u}$">
       <g
          id="g1664">
@@ -582,12 +602,12 @@
       </g>
     </g>
     <rect
-       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:2.00000003, 2.00000003;stroke-dashoffset:0"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.516396;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:2.06559, 2.06559;stroke-dashoffset:0"
        id="rect1685"
-       width="4.6144781"
-       height="57.769718"
-       x="135.31192"
-       y="27.583668" />
+       width="4.5980816"
+       height="61.84042"
+       x="135.32011"
+       y="27.591866" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Sstart);marker-end:url(#marker5297)"
        d="M 163.79744,28.471068 V 39.386085"
@@ -600,5 +620,29 @@
        id="path1687-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.50000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.50000001,1.50000004;stroke-dashoffset:0"
+       d="M 17.762885,76.346314 H 173.2425"
+       id="path115"
+       sodipodi:nodetypes="cc" />
+    <g
+       inkscape:label=""
+       transform="matrix(0.7215014,0,0,0.7215014,106.92683,19.581542)"
+       id="g1104">
+      <g
+         id="g8153">
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g466">
+          <use
+             xlink:href="#symbol2637"
+             x="91.925003"
+             y="81.962997"
+             id="use9811"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
