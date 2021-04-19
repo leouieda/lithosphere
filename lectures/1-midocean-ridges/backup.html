@@ -1,0 +1,845 @@
+<!--
+Lecture slides for ENVS 398 Advanced Geodynamics
+===============================================================================
+-->
+
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="../js/revealjs/css/reveal.css">
+    <link rel="stylesheet" href="../js/revealjs/css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../js/revealjs/lib/css/zenburn.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- FontAwsome icons -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? '../js/revealjs/css/print/pdf.css' : '../js/revealjs/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!-- Page title -->
+    <title>
+        Formation of the oceanic lithosphere
+        -
+        ENVS398 Advanced Geodynamics
+    </title>
+
+</head>
+
+
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- Slides are sections -->
+<!-- =============================================================================== -->
+
+<section data-background-image="../img/background.svg"
+         data-background-repeat="no-repeat"
+         data-background-position="center"
+         >
+  <p style="font-size: 0.6em; line-height: 1.5em; margin-bottom: 10%; text-align: center;">
+    ENVS398 Advanced Geodynamics
+    |
+    Part 2 - The Lithosphere
+  </p>
+  <h1>
+      Oceanic lithosphere
+  </h1>
+  <p style="font-size: 0.5em; margin-top: 15%; text-align: center;">
+    <i class="fas fa-user"></i> Leonardo Uieda
+    <i style="margin-left: 10px;" class="fas fa-envelope"></i> uieda@liverpool.ac.uk
+    <i style="margin-left: 10px;" class="fas fa-building"></i> Herdman Building - A2.06
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Learning objectives
+
+    Understand the physical models for the formation of<br>the oceanic lithosphere:
+
+    * The physical principals behind them
+    * How they compare to observations
+    * Their implications for our understanding of ocean floor topography
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h1>Previously<br>on ENVS398</h1>
+</section>
+
+<section>
+  <h3>The oceans are close to isostatic equilibrium</h3>
+
+  <img src="../2-isostasy/gravity-disturbance.png" width="70%">
+</section>
+
+<section>
+  <h3>Mid-ocean ridges aren't compensated by<br>crustal roots (Airy isostasy)</h3>
+
+  <img src="../2-isostasy/topography-profile-airy.png" width="70%">
+  <p class="attribution">
+  This model does not match plate tectonics (plates are created at the
+  ridges).
+  </p>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Questions
+
+    * What is the thickness of the oceanic lithosphere?
+    * How does it vary with lithosphere age?
+    * Can models match geophysical observations?
+  </textarea>
+</section>
+
+<section>
+  <h1>Global heat flow</h1>
+</section>
+
+<section>
+  <h3>Most heat is lost through the oceanic plates</h3>
+
+  <img src="global-heat-flow.png" width="75%">
+
+  <p class="attribution" style="margin-top: 0%">
+  Global heat flow compilation by
+  <a href="https://doi.org/10.1029/2019GC008389">Lucazeau (2019)</a>.
+  </p>
+</section>
+
+<section>
+  <h3>Young lithosphere is warmer than older lithosphere</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="global-heat-flow.png" width="100%">
+    </div>
+    <div class="col">
+      <img src="../1-plate-tectonics/lithosphere-age.png" width="100%">
+    </div>
+  </div>
+</section>
+
+<section data-markdown>
+  <textarea data-template>
+    ## Heat flow in oceanic plates
+
+    * Plates formed at mid-ocean ridges.
+    * Most cooling happens through **conduction**.
+    * Convective cooling associated with fluid flow in the crust happens mostly on younger lithosphere.
+  </textarea>
+</section>
+
+<section>
+  <h3>Conduction models</h3>
+  <ul>
+    <li class="fragment">
+      Convection of the mantle is controlled by thin thermal boundary
+      layers.
+    </li>
+    <li class="fragment">
+      Surface boundary layer (lithosphere) is the greatest
+      temperature gradient.
+    </li>
+    <li class="fragment">
+      Lithosphere cools by vertical conduction away from the ridge.
+    </li>
+    <li class="fragment">
+      Spreading and cooling are symmetric around the ridge axis.
+    </li>
+    <li class="fragment">
+      As it cools it becomes denser and the sea-floor depth increases.
+    </li>
+    <li class="fragment">
+      Ultimately initiates subduction (driving convective flow).
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Reading</h2>
+
+  <p>For an detailed discussion and derivation of equations, see:</p>
+  <ul>
+    <li>
+      Chapter 7 section 5 of "The Solid Earth" by C. M. R. Fowler.
+    </li>
+    <li>
+      Chapter 4 sections 15-17 of "Geodynamics" by D. Turcotte and G. Schubert.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h1>Conductive cooling:</h1>
+  <h2>Half-space model (HSM)</h2>
+</section>
+
+<section>
+  <h3>Model setup</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="halfspace-model-space.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Lithosphere is defined by an isotherm.
+        </li>
+        <li class="fragment">
+          Model starts with asthenosphere temperature at the ridge.
+        </li>
+        <li class="fragment">
+          Temperature at the surface is held at $T_0$.
+        </li>
+        <li class="fragment">
+          Cooling by vertical conduction only as plate moves away from ridge.
+        </li>
+        <li class="fragment">
+          No internal heat generation.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Switching to time</h3>
+
+  <div class="container" style="margin-top: 2%;">
+    <div class="col">
+      <img src="halfspace-model-space.svg" width="100%">
+      <img class="fragment" src="halfspace-model-time.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Assume that spreading rate is constant $u = \frac{x}{t}$
+        </li>
+        <li class="fragment">
+          From 2D to 1D (vertical) varying with time.
+        </li>
+        <li class="fragment">
+          Diffusion equation:
+          $
+          \dfrac{\partial^2 T}{\partial z^2}
+          = \dfrac{1}{\alpha} \dfrac{\partial T}{\partial t}
+          $
+        </li>
+        <li class="fragment">
+          $\alpha$ is the
+          <a href="https://en.wikipedia.org/wiki/Thermal_diffusivity">thermal
+          diffusivity</a>*.
+        </li>
+      </ul>
+      <p class="fragment attribution" style="margin-top: 10%">
+        *Note: the Geodynamics book uses $\kappa$ for thermal diffusivity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Boundary conditions</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="halfspace-model-time.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Profile is at asthenosphere temperature $T=T_a$ at $t=0$ (ridge).
+        </li>
+        <li class="fragment">
+          The top of the lithosphere $z=0$ is at a constant temperature
+          $T = T_0$.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="halfspace-model-time.svg" width="100%">
+      <p style="font-size: 0.8em">
+        $
+        T(t) = T_0 + (T_a - T_0) \text{erf}
+        \left(
+        \dfrac{z}{2\sqrt{\alpha t}}
+        \right)
+        $
+      </p>
+      <p class="fragment" style="font-size: 0.65em; margin-top: 5%">
+        $
+        \text{erf}(z) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^z e^{-n^2} dn
+        $
+        is the <a href="https://en.wikipedia.org/wiki/Error_function">error function</a>
+      </p>
+    </div>
+    <div class="col fragment">
+      <img src="halfspace-model-space.svg" width="100%">
+      <p style="font-size: 0.8em">
+        $
+        T(x) = T_0 + (T_a - T_0) \text{erf}
+        \left(
+        \dfrac{z}{2\sqrt{\alpha \frac{x}{u}}}
+        \right)
+        $
+      </p>
+      <p class="fragment attribution" style="margin-top: 10%">
+        See "Geodynamics" sections 4.15 and 4.16 for a derivation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col-img">
+      <img src="./halfspace-temperature.png" width="100%">
+    </div>
+    <div class="col-text">
+      <p> Assuming:</p>
+      <ul>
+        <li>
+          $T_0 = 273\ K$
+        </li>
+        <li>
+          $T_a = 1300\ K$
+        </li>
+        <li>
+          $\alpha = 1\ mm^2/s$
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Comparison with observations</h1>
+</section>
+
+<section>
+  <h2>Lithospheric thickness</h2>
+  <ul>
+    <li>Can be measured with seismic methods.</li>
+    <li>For example: receiver functions, surface wave dispersion,
+      tomography.</li>
+    <li>We can predict thickness with our model under some assumptions.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>The data</h3>
+
+  <p style="font-size: 0.8em">
+  Lithospheric thickness from inversion of Rayleigh wave dispersion data
+  <br>
+  (<a href="https://doi.org/10.1126/science.186.4159.141">Leeds et al., 1974</a>).
+  </p>
+  <img src="./lithospheric-thickness-data.png" width="70%">
+</section>
+
+<section>
+  <h3>Lithospheric thickness for half-space cooling</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Based on the temperature.
+        </li>
+        <li class="fragment">
+          Here we'll use:
+          $\dfrac{T - T_0}{T_a - T_0} = 0.8$
+        </li>
+        <li class="fragment">
+          This is somewhat arbitrary.
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Substitute in solution:
+          $\text{erf}\left(\dfrac{z}{2\sqrt{\alpha t}}\right) = 0.8$
+        </li>
+        <li class="fragment">
+          Taking the inverse:
+          $\dfrac{z}{2\sqrt{\alpha t}} = \text{erf}^{-1}(0.8)$
+        </li>
+        <li class="fragment">
+          $z_{litho} = \text{erf}^{-1}(0.8) 2 \sqrt{\alpha t}$
+        </li>
+      </ul>
+    </div>
+  </div>
+  <p class="fragment attribution" style="margin-top: 5%">
+    See "Geodynamics" section 4.15 for a derivation.
+  </p>
+</section>
+
+<section>
+  <h3>Half-space model thickness predictions</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col-img">
+      <p style="font-size: 0.6em">
+      Assuming $T_a = 1300\ K$, $T_0 = 273\ K$, and $\alpha = 1\ \frac{mm^2}{s}$
+      </p>
+      <img src="./lithospheric-thickness-halfspace-isotherms.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li class="fragment">
+          Cannot fit all observations.
+        </li>
+        <li class="fragment">
+          No single isotherm fits young and old lithosphere simultaneously.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Heat flow</h2>
+  <ul>
+    <li>Can be measured in ocean bottom drilling operations</li>
+    <li>Difficult to remove effects of hydrothermal convection in younger
+      lithosphere.</li>
+    <li>Data compilations exist that try to control for these effects.</li>
+  </ul>
+</section>
+
+<section>
+  <h3>The data</h3>
+
+  <div class="container" style="">
+    <div class="col-img">
+      <img src="./lithospheric-heat-flow.png" width="100%">
+    </div>
+    <div class="col-text">
+      <p style="font-size: 0.8em">
+      Heat flow in the Atlantic and Pacific Oceans compiled from
+      <br>
+      <a href="https://doi.org/10.1029/JB081i017p02997">Sclater et al. (1976)</a>,
+      <a href="https://doi.org/10.1111/j.1365-246X.1984.tb01962.x">Davis et al. (1984)</a>,
+      and <a href="https://doi.org/10.1111/j.1365-246X.1990.tb04586.x">Lister et al. (1990)</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Heat flow for half-space cooling</h3>
+
+    <ul>
+      <li class="fragment">
+        From <a href="https://en.wikipedia.org/wiki/Thermal_conduction#Fourier's_law">Fourier's law</a>
+        the heat flow (or flux) is:
+        $q = -k \dfrac{\partial T}{\partial z}$
+      </li>
+      <li class="fragment">
+        $k$ is the <a href="https://en.wikipedia.org/wiki/Thermal_conductivity">thermal conductivity</a>
+      </li>
+      <li class="fragment">
+        We want to calculate $q = q_0$ at the surface $z=0$
+      </li>
+      <li class="fragment">
+        Substituting for the half-space model*:
+        $q_0 = k \dfrac{T_a - T_0}{\sqrt{\pi \alpha t}}$
+      </li>
+    </ul>
+  <p class="fragment attribution" style="margin-top: 5%">
+    *See "Geodynamics" section 4.15 for a derivation. (The sign here is flipped
+    because most data have positive flux upward instead of downward).
+  </p>
+</section>
+
+<section>
+  <h3>Half-space model heat flow predictions</h3>
+
+  <div class="container" style="">
+    <div class="col-img">
+      <img src="./lithospheric-heat-flow-halfspace.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Predictions match younger lithosphere well.
+        </li>
+        <li>
+          Model predictions too small for older lithosphere.
+        </li>
+        <li>
+          Half-space model cools indefinitely ($\lim_{t \to \infty} = T_0$)
+        </li>
+        <li>
+          In reality there is probably basal heating from convection.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Conductive cooling:</h1>
+  <h2>Plate model (PM)</h2>
+</section>
+
+<section>
+  <h3>Model setup</h3>
+  <ul>
+    <li>
+      For older lithosphere, need to account for basal heating due to
+      convection.
+    </li>
+    <li>
+      Instead of a half-space, use a plate of thickness $L$.
+    </li>
+    <li>
+      $L$ is the thickness of the lithosphere for large $t$.
+    </li>
+    <li>
+      Same model setup as before but different boundary conditions.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3>Boundary conditions</h3>
+
+  <div class="container" style="margin-top: 5%;">
+    <div class="col">
+      <img src="halfspace-model-time.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          Profile is at asthenosphere temperature $T=T_a$ at $t=0$ (ridge).
+        </li>
+        <li class="fragment">
+          The top of the lithosphere $z=0$ is at a constant temperature
+          $T = T_0$.
+        </li>
+        <li class="fragment">
+          <strong>New:</strong>
+          The bottom of the lithosphere $z=L$ is at a constant temperature
+          $T = T_a$ for $t>0$.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <p style="margin-top: 5%">
+  The solution is more complicated than the half-space model
+  </p>
+  <p style="font-size: 0.8em; margin: 6% 0">
+    $
+    T(t) = T_0 + (T_a - T_0) \left[
+      \dfrac{z}{L} + \sum\limits_{n=1}^{\infty}
+      \dfrac{2}{\pi n} \exp\left(
+        -\dfrac{\alpha n^2 \pi^2 t}{L^2}
+      \right)
+      \sin\left(
+        \dfrac{n \pi z}{L}
+      \right)
+    \right]
+    $
+  </p>
+  <p>In practice, we truncate the sum at some value of $n$.</p>
+  <p class="attribution" style="margin-top: 10%">
+    See "Geodynamics" sections 4.17 (the derivation is actually in another
+    book).
+  </p>
+</section>
+
+<section>
+  <h3>Solution</h3>
+
+  <p style="font-size: 0.7em; margin-top: 5%;">
+      Assuming: $T_0 = 273\ K$ $T_a = 1300\ K$ $\alpha = 1\ mm^2/s$ $L = 95\ km$
+  </p>
+
+  <div class="container" style="">
+    <div class="col">
+      <img src="./plate-temperature.png" width="100%">
+    </div>
+    <div class="col fragment">
+      <img src="./halfspace-temperature.png" width="100%">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Heat flow for plate cooling</h3>
+
+    <ul>
+      <li class="fragment">
+        Apply <a href="https://en.wikipedia.org/wiki/Thermal_conduction#Fourier's_law">Fourier's law</a>
+        once more:
+        $q = -k \dfrac{\partial T}{\partial z}$
+      </li>
+      <li class="fragment">
+        We want to calculate $q = q_0$ at the surface $z=0$
+      </li>
+      <li class="fragment">
+        Substituting for the plate model*:
+        $
+        q_0 = k \dfrac{T_a - T_0}{L} \left[
+          1 + \sum\limits_{n=1}^{\infty}
+          2\exp\left(
+            -\dfrac{\alpha n^2 \pi^2 t}{L^2}
+          \right)
+        \right]
+        $
+      </li>
+    </ul>
+  <p class="fragment attribution" style="margin-top: 5%">
+    *There is no derivation of this in "Geodynamics".
+    <br>
+    The trick is to remember that we're calculating at $z=0$ so the cosine will
+    be equal to 1.
+  </p>
+</section>
+
+<section>
+  <h3>Plate model heat flow predictions</h3>
+
+  <div class="container" style="">
+    <div class="col-img">
+      <img src="./lithospheric-heat-flow-plate.png" width="100%">
+    </div>
+    <div class="col-text">
+      <ul>
+        <li>
+          Matches the half-space model for younger lithosphere.
+        </li>
+        <li>
+          Also able to predict older lithosphere flux for $L=95\ km$.
+        </li>
+        <li>
+          Basal heating has large effect at $t > 50\ Myr$.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h1>Wrap up</h1>
+</section>
+
+<section>
+  <h3>What we learned today</h3>
+
+  <div class="container" style="">
+    <div class="col">
+      <img src="./lithospheric-heat-flow-plate.png" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li class="fragment">
+          View of the lithosphere as a thermal boundary layer.
+        </li>
+        <li class="fragment">
+          Model its formation and evolution using heat diffusion.
+        </li>
+        <li class="fragment">
+          Models of vertical cooling by conduction can fit observations.
+        </li>
+        <li class="fragment">
+          Need to account for basal heating in order to fit heat flux on older
+          lithosphere ($t>50\ Myr$).
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Practical</h3>
+
+  <div class="container" style="">
+    <div class="col">
+      <img src="./cooliing-and-bathymetry.svg" width="100%">
+    </div>
+    <div class="col">
+      <ul>
+        <li>
+          Predict bathymetry from cooling models.
+        </li>
+        <li>
+          Use the principles of isostatic equilibrium.
+        </li>
+        <li>
+          Implement the equations in Python.
+        </li>
+        <li>
+          Compare against observations.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================================== -->
+
+<section data-markdown>
+  <textarea data-template>
+    ### Data sources
+
+    * Global heat flow grid from [Lucazeau (2019)](https://doi.org/10.1029/2019GC008389).
+    * Lithospheric thickness versus age of the oceanic lithosphere of the Pacific Ocean from [Leeds et al. (1974)](https://doi.org/10.1126/science.186.4159.141).
+    * Heat flow of oceanic lithosphere data compiled from [Davis et al. (1984)](https://doi.org/10.1111/j.1365-246X.1984.tb01962.x), [Sclater et al. (1976)](https://doi.org/10.1029/JB081i017p02997), and [Lister et al. (1990)](https://doi.org/10.1111/j.1365-246X.1990.tb04586.x).
+  </textarea>
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>Source code</h2>
+
+  <p>
+  Python code for making the figures shown in this lecture are available in a
+  Jupyter notebook:
+  </p>
+
+  <ul style="font-size: 1em">
+    <li>
+      <a href="https://github.com/leouieda/envs398/blob/master/slides/3-oceanic-lithosphere/make_figures.ipynb">view online (static)</a>
+    </li>
+    <li>
+      <a
+        href="https://mybinder.org/v2/gh/leouieda/envs398-env/master?urlpath=git-pull?repo=https://github.com/leouieda/envs398%26amp%3Burlpath=lab%2Ftree%2Fenvs398%2Fslides%2F3-oceanic-lithosphere%2Fmake_figures.ipynb%3Fautodecode">run online with Binder</a>
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <h2>References</h2>
+
+  <ul style="font-size: 0.7em">
+    <li>
+      Chapter 7 section 5: Oceanic heat flow, "The Solid Earth" by C. M. R. Fowler.
+    </li>
+    <li>
+      Chapter 4 sections 16 and 17: Cooling of the oceanic lithosphere, "Geodynamics" by Donald Turcotte and Gerald Schubert.
+    </li>
+  </ul>
+
+</section>
+
+<!-- =============================================================================== -->
+
+<section>
+  <ul class="fa-ul">
+    <li> <i class="fa-li fas fa-arrow-left"></i> Back:
+      <a target="_blank" href="../2-isostasy/">Lecture 2 - Isostasy and Plate Flexure</a>
+    </li>
+    <li> <i class="fa-li fas fa-arrow-right"></i> Next:
+      <a target="_blank" href="../4-subduction/">Lecture 4 - Subduction</a>
+    </li>
+  </ul>
+</section>
+
+
+<!-- =============================================================================== -->
+
+<section>
+
+  <p style="font-size: 1.6em">
+  <i class="fab fa-creative-commons"></i>
+  <i class="fab fa-creative-commons-by"></i>
+  </p>
+
+  <p style="font-size: 0.8em;">
+  "ENVS398 Advanced Geodynamics"
+  by <a href="https://www.leouieda.com">Leonardo Uieda</a> is licensed under a
+  <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+    Attribution 4.0 International License</a>.
+  </p>
+
+  <p style="font-size: 0.8em;">
+  <i class="fab fa-github"></i>
+  Source code:
+  <a href="https://github.com/leouieda/envs398">leouieda/envs398</a>
+  </p>
+
+</section>
+
+<!-- =============================================================================== -->
+
+</div>
+</div>
+
+<!--
+Placed at the end of the document so the pages load faster
+==========================================================
+-->
+
+<script src="../js/revealjs/lib/js/head.min.js"></script>
+<script src="../js/revealjs/js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        width: 1920,
+        height: 1080,
+        controls: true,
+        transition: 'none',
+        mouseWheel: true,
+        history: true,
+        fragmentInURL: true,
+        slideNumber: 'c/t',
+        dependencies: [
+            { src: '../js/revealjs/plugin/markdown/marked.js' },
+            { src: '../js/revealjs/plugin/markdown/markdown.js' },
+            { src: '../js/revealjs/plugin/notes/notes.js', async: true },
+            { src: '../js/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: '../js/revealjs/plugin/math-katex/math-katex.js', async: true }
+        ]
+    });
+</script>
+
+</body>
+</html>

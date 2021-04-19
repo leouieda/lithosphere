@@ -32,8 +32,8 @@ ENVS398 Global Geophysics and Geodynamics
 
 # Aims
 
-Understand the main models for the formation of <br>
-the oceanic lithosphere, including:
+Understand the main models for the formation of the oceanic lithosphere,
+including:
 
 * The physics behind them
 * How they compare to observations
@@ -78,7 +78,7 @@ Map of global earthquake hypocenters from the Global CMT Catalog
 </div>
 <div class="col-small">
 
-Marked by elevated seismicity at shallow depths
+Marked by concentrated seismicity at shallow depths
 
 Indicator of movement and a key piece of evidence for sea floor spreading
 
@@ -109,6 +109,42 @@ Important boundary condition for mantle convection
 </div>
 </div>
 
+---
+
+# Mid-ocean ridges
+
+<div class="container">
+<div class="col-large tiny">
+
+<img src="../assets/gravity-disturbance.png">
+
+Map of the gravity disturbance from the EIGEN-6C4 spherical harmonic model
+[(Foerste et al., 2014)](https://doi.org/10.5880/icgem.2015.1).
+Small values indicate isostatic equilibrium.
+
+</div>
+<div class="col-small">
+
+Gravity disturbance data suggests that mid-ocean ridges are in
+**isostatic equilibrium**
+
+Ridges can't be compensated by thickened lithosphere since it's created
+there
+
+</div>
+</div>
+
+---
+
+# Questions
+
+<div class="huge">
+
+* What is the thickness of the oceanic lithosphere?
+* How does it vary with lithospheric age?
+* Can models match geophysical observations?
+
+</div>
 
 ---
 
