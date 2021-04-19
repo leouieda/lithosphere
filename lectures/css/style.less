@@ -220,7 +220,6 @@
         }
         h1 {
             margin: auto;
-            padding: 12% 0;
             font-size: @basefontsize * 2;
             line-height: @basefontsize * 2.9;
             text-transform: none;
@@ -235,6 +234,12 @@
         }
         .title-license p {
             font-size: @basefontsize * 0.5;
+        }
+        #slide-title-text {
+            // Center the title in this slide
+            display:flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     .slide-conclusions {

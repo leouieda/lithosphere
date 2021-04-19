@@ -13,7 +13,7 @@ ENVS398 Global Geophysics and Geodynamics
 </div>
 </div>
 
-<div class="r-stretch">
+<div class="r-stretch" id="slide-title-text">
 
 # Introduction to the module
 
