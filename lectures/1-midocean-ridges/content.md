@@ -174,14 +174,18 @@ showing good correlation with oceanic heat flow.
 
 ---
 
+<div class="centered">
+<div>
+
 # Some assumptions for our modelling
 
-1. Convection of the mantle is controlled by thin **thermal boundary layers**.
-1. Surface boundary layer (lithosphere) has the **greatest temperature gradient**.
 1. Away from the ridge, the lithosphere **cools by vertical conduction**.
 1. Spreading and cooling are **symmetric** around the ridge axis.
 1. As it cools it becomes **denser** and the sea-floor depth increases.
-1. Ultimately **initiates subduction** (driving convective flow).
+1. Ultimately, this process **initiates subduction** (driving convective flow).
+
+</div>
+</div>
 
 ---
 
@@ -261,11 +265,22 @@ diffusivity</a>\*
 
 A 1D partial differential equation (PDE) with time will require:
 
+<div class="container">
+<div class="col-left tiny">
+
+<img src="../assets/halfspace-model-time.svg">
+
+</div>
+<div class="col-right small">
+
 **Initial condition:** Profile is at asthenosphere temperature $T=T_a$ at the
 ridge (or $t=0$)
 
 **Boundary condition:** The top of the lithosphere $z=0$ is at a constant
 temperature $T = T_0$
+
+</div>
+</div>
 
 ---
 
@@ -284,7 +299,7 @@ $$
 
 <div class="fragment">
 
-Then we can switch back to $x$:
+We can switch back to $x$ if we need to:
 
 $$
 T(x, z) = T_0 + (T_a - T_0)\ \text{erf}
@@ -303,7 +318,8 @@ $$
 $
 \text{erf}(x) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^x e^{-n^2} dn
 $
-is the [error function](https://en.wikipedia.org/wiki/Error_function).
+is the [error function](https://en.wikipedia.org/wiki/Error_function), which
+we can easily calculate numerically using Python or Matlab.
 
 </div>
 </div>
@@ -324,7 +340,7 @@ See "Geodynamics" sections 4.15 and 4.16 for a derivation.
 <img src="../assets/halfspace-temperature.png">
 
 </div>
-<div class="col-small">
+<div class="col-small small">
 
 Calculate $T(z, t)$ for a range of times and depths assuming:
 
