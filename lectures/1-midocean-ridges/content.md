@@ -284,11 +284,14 @@ temperature $T = T_0$
 
 ---
 
-Solving the diffusion equation and applying the boundary conditions  we get
-temperature as a function of time and depth:
+Solving the diffusion equation and applying
+<br>
+the boundary and initial conditions
 
 <div class="container">
 <div class="col-left small">
+
+We get temperature as a function of time and depth:
 
 $$
 T(z, t) = T_0 + (T_a - T_0)\ \text{erf}
@@ -297,16 +300,13 @@ T(z, t) = T_0 + (T_a - T_0)\ \text{erf}
 \right)
 $$
 
-<div class="fragment">
+<div class="tiny">
 
-We can switch back to $x$ if we need to:
-
-$$
-T(x, z) = T_0 + (T_a - T_0)\ \text{erf}
-\left(
-\dfrac{z}{2\sqrt{\alpha \frac{x}{u}}}
-\right)
-$$
+$
+\text{erf}(x) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^x e^{-n^2} dn
+$
+is the [error function](https://en.wikipedia.org/wiki/Error_function), which
+we can easily calculate numerically using Python or Matlab.
 
 </div>
 
@@ -314,12 +314,6 @@ $$
 <div class="col-right tiny">
 
 <img src="../assets/halfspace-model-time.svg">
-
-$
-\text{erf}(x) = \dfrac{2}{\sqrt{\pi}} \int\limits_0^x e^{-n^2} dn
-$
-is the [error function](https://en.wikipedia.org/wiki/Error_function), which
-we can easily calculate numerically using Python or Matlab.
 
 </div>
 </div>
@@ -579,8 +573,9 @@ equations in Python and evaluate how well our model fits the available data.
 
 # Reading
 
-For an detailed discussion and derivation of equations, refer to the excellent
-textbooks:
+For an detailed discussion and derivation of equations,
+<br>
+refer to the excellent textbooks:
 
 * "The Solid Earth" by C. M. R. Fowler (chapter 7 section 5)
 * "Geodynamics" by D. Turcotte and G. Schubert (chapter 4 sections 15-17)
