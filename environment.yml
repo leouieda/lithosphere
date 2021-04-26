@@ -16,6 +16,7 @@ dependencies:
     - netcdf4
     - pygmt
     - cmocean
+    - pyproj
     # To serve slides
     - livereload
     # Fatiando packages
