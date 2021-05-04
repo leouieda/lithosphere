@@ -577,8 +577,8 @@ For an detailed discussion and derivation of equations,
 <br>
 refer to the excellent textbooks:
 
-* "The Solid Earth" by C. M. R. Fowler (chapter 7 section 5)
-* "Geodynamics" by D. Turcotte and G. Schubert (chapter 4 sections 15-17)
+* "The Solid Earth" by C. M. R. Fowler (section 7.5)
+* "Geodynamics" by D. Turcotte and G. Schubert (sections 4.15-17)
 
 ---
 
