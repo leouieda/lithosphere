@@ -45,12 +45,7 @@ subduction of the oceanic lithosphere:
 # Overview
 
 <div class="container">
-<div class="col-large tiny">
-
-<img src="../assets/Subduction-en.png" width="100%">
-
-</div>
-<div class="col-small small">
+<div class="col-large small">
 
 Subduction is a big part of global tectonics
 
@@ -60,39 +55,8 @@ Important global cycles: water and carbon
 
 Understanding subduction is key to understanding the deep Earth
 
-</div>
-</div>
-
-<div class="r-stretch bottom-left">
-
-Image credit:
-[K. D. Schroeder](https://commons.wikimedia.org/wiki/File:Subduction-en.svg) (CC-BY-SA)
-
-</div>
-
----
-
-# Where is the slab?
-
-<div class="container">
-<div class="col-large small">
-
-The cold subducting slab heats and deforms causing deep earthquakes (70-300km)
-
-This region is known as the Wadati-Benioff zone
-
-The surrounding asthenosphere is ductile and cannot cause earthquakes
-
-Hypocenters provide an image of the slab
-
-<div class="tiny">
-
-Example: hypocenters along the Japan
-subduction zone from the Global CMT Catalog
-([Dziewonski et al., 1981](https://doi.org/10.1029/JB086iB04p02825);
-[Ekström et al., 2012](https://doi.org/10.1016/j.pepi.2012.04.002))
-
-</div>
+Example: hypocenters along the Japan subduction zone delineating the subducting
+slab
 
 </div>
 <div class="col-small tiny">
@@ -104,8 +68,9 @@ subduction zone from the Global CMT Catalog
 
 <div class="r-stretch bottom-left">
 
-This is still used to determine slab geometry,
-for example the 2018 [Slab2](https://doi.org/10.1126/science.aat4723) model.
+Data from the Global CMT Catalog
+([Dziewonski et al., 1981](https://doi.org/10.1029/JB086iB04p02825);
+[Ekström et al., 2012](https://doi.org/10.1016/j.pepi.2012.04.002))
 
 </div>
 
@@ -136,7 +101,7 @@ Examples: Japan, Philippines, Tonga, Solomon Islands
 
 <div class="r-stretch bottom-left">
 
-The Pacific plate is older (hence cooler and denser). How can we tell from
+The Pacific plate is older than the Mariana plate. How can we tell just from
 comparing the bathymetry the two plates?
 
 </div>
@@ -360,8 +325,8 @@ For an detailed discussion and derivation of equations,
 <br>
 refer to the excellent textbooks:
 
-* "The Solid Earth" by C. M. R. Fowler, section 9.6
-* "Geodynamics" by Donald Turcotte and Gerald Schubert, sections 3.17
+* "The Solid Earth" by C. M. R. Fowler (section 9.6)
+* "Geodynamics" by Donald Turcotte and Gerald Schubert (section 3.17)
 
 ---
 
