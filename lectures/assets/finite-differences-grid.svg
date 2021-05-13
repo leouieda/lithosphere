@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:ns1="http://wanglongqi.github.io/WriteTeX"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -11,12 +9,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="finite-differences-grid.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 280 120"
-   height="120mm"
-   width="280mm"
+   viewBox="0 0 260 100"
+   height="100mm"
+   width="260mm"
    inkscape:export-filename="finite-differences-grid.png"
    inkscape:export-xdpi="211.66667"
    inkscape:export-ydpi="211.66667">
@@ -33,7 +31,7 @@
       <path
          id="path1067"
          d="M 0,5.65 V -5.65"
-         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:1.00000003pt;stroke-opacity:1"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#999999;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.4)"
          inkscape:connector-curvature="0" />
     </marker>
@@ -74,7 +72,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -94,43 +93,43 @@
      transform="translate(124.37122,-29.76403)">
     <g
        id="g8417"
-       transform="translate(3.7657362e-7,-1.267592)">
+       transform="translate(-9.9999997,-11.267592)">
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path10"
          d="M -112.94427,50.966116 H 143.99126"
-         style="fill:none;stroke:#666666;stroke-width:0.74850494;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)" />
+         style="fill:none;stroke:#666666;stroke-width:0.748505;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)" />
       <circle
          r="1.4034468"
          cy="50.966114"
          cx="-92.51329"
          id="path817"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.8892985;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.889298;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <circle
          r="1.4034468"
          cy="50.966114"
          cx="-40.118771"
          id="path817-1"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.88929856;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.889299;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <circle
          r="1.4034468"
          cy="50.966114"
          cx="12.275744"
          id="path817-5"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.88929856;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.889299;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <circle
          r="1.4034468"
          cy="50.966114"
          cx="64.670265"
          id="path817-7"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.88929856;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.889299;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <circle
          r="1.4034468"
          cy="50.966114"
          cx="117.06478"
          id="path817-8"
-         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.88929856;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
+         style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.889299;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0" />
       <g
          ns1:text="$x$"
          transform="matrix(0.74850494,0,0,0.74850494,6.5353684,-23.465767)"
@@ -909,25 +908,25 @@
           </g>
         </g>
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75"
            cx="-73.603409"
            cy="70.24662"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-3"
            cx="-17.604298"
            cy="70.24662"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-9"
            cx="38.394821"
            cy="70.24662"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-72"
            cx="94.393936"
            cy="70.24662"
@@ -1339,19 +1338,19 @@
           </g>
         </g>
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-9"
            cx="-45.603848"
            cy="92.294266"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-2"
            cx="10.395264"
            cy="92.294266"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-8"
            cx="66.394371"
            cy="92.294266"
@@ -1701,13 +1700,13 @@
           </g>
         </g>
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-9-7"
            cx="-17.604298"
            cy="113.82829"
            r="1.5" />
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-9-4"
            cx="38.394821"
            cy="114.30968"
@@ -1927,7 +1926,7 @@
           </g>
         </g>
         <circle
-           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95047981;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#999999;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.95048;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
            id="path817-75-9-7-6"
            cx="10.395264"
            cy="134.13701"
@@ -1937,7 +1936,7 @@
          transform="translate(1.3868724,0.72979427)"
          id="g7643">
         <path
-           style="fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopM);marker-end:url(#StopM)"
+           style="fill:none;fill-opacity:1;stroke:#999999;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#StopM);marker-end:url(#StopM)"
            d="m -93.67491,45.381096 h 52.173562"
            id="path7221"
            inkscape:connector-curvature="0"
@@ -1947,7 +1946,7 @@
          transform="translate(0,0.20062764)"
          id="g7604">
         <rect
-           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.62960923;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.629609;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0"
            id="rect7543"
            width="14.398281"
            height="5.9746833"

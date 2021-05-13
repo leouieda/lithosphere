@@ -170,15 +170,6 @@ $D = \dfrac{E T_e^2}{12(1 - \nu^2)}$
 
 <img src="../assets/flexure-seamount.svg">
 
-$w$ = deflection,
-$q(x)$ = force density of the load,
-$g$ = gravity,
-$E$ = Young's modulus,
-$\nu$ = Poisson's ratio,
-$T_e$ = effective elastic thickness,
-$\rho_m$ = mantle density,
-$\rho_w$ = water density
-
 Assume that bending is happening under a finite load $q(x)$, i.e. it's
 restricted to a finite domain of $x$
 
@@ -202,61 +193,123 @@ $\dfrac{\partial w}{\partial x}(x=x_{max}) = 0$
 
 ---
 
-# Solution for the deflection
+# The load
 
 <div class="container">
 <div class="col-large tiny">
 
-<img src="../assets/flexure-setup.svg" width="100%">
+<img src="../assets/flexure-seamount-load.svg">
+
+$w$ = deflection,
+$q(x)$ = force density of the load,
+$g$ = gravity,
+$\rho_c$ = load density
+
+Assume that bending is happening under a finite load $q(x)$, i.e. it's
+restricted to a finite domain of $x$
 
 </div>
 <div class="col-small small">
 
-Write $w(x)$ in terms of measurable quantities:
+The load $q(x)$ is the weight of the seamount per unit area:
 
-* Forebulge deflection $w_b$ and peak position $x_b$
-* Position $x_0$ where deflection crosses the zero line
+$q(x) = -g \rho_c h(x)$
+
+$h(x)$ is the height of the seamount at position $x$
+
+The minus sign indicates that the force is downwards
 
 </div>
 </div>
+
+---
+
+# Solution by finite-differences
 
 <div class="small">
 
-$ w(x) = w_b\ e^{\pi/4} \sqrt{2}
-\exp\left( -\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right)
-\sin\left(\dfrac{\pi}{4}\left(\dfrac{x - x_0}{x_b - x_0}\right) \right) $
+Approximate the derivatives by differences:
 
-</div>
+$\dfrac{\partial w}{\partial x}(x) \approx \dfrac{w(x + \Delta x) - w(x)}{\Delta x}$
 
-<div class="r-stretch bottom-left">
+Discretize the continuous $w(x)$ into $w_0, w_1, \ldots, w_{N-1}$ with $\Delta x$ spacing:
 
-See "Geodynamics" section 3.17 for a derivation.
+<img src="../assets/finite-differences-grid-first-order.svg" style="width: 100%; margin-top: -2%;">
 
 </div>
 
 ---
 
-# Gravity disturbances
+# Higher order derivatives
 
-<div class="container">
-<div class="col-large small">
+<div class="small">
 
-gravity disturbance = observed gravity - normal (ellipsoid) gravity
-
-This means that the density anomalies causing the observed disturbance are:
-
-Real Earth densities - Normal Earth densities
-
-Assume that the ellipsoid is layered (including an ocean)
-
-Density anomalies at subduction zones 👉🏽
+<img src="../assets/finite-differences-grid.svg">
 
 </div>
-<div class="col-small small">
 
-<img src="../assets/disturbance-subduction.svg" style="width: 90%;">
+---
+
+# Flexure in finite-differences
+
+<div class="small">
+
+The differential equation becomes\*:
+
+$D \dfrac{w_{i+2} - 4w_{i+1} + 6w_i - 4w_{i-1} + w_{i-2}}{\Delta x^4} = q_i -
+(\rho_m - \rho_w) g\ w_i$
+
+with boundary conditions:
+
+$w_0 = 0$,
+$w_{N-1} = 0$,
+$\dfrac{w_1- w_0}{\Delta x} = 0$,
+$\dfrac{w_{N-1} - w_{N-2}}{\Delta x} = 0$
 
 </div>
+<div class="r-stretch bottom-right">
+
+\*
+For $i$ ranging from $2$ to $N - 3$.
+$N$ is the number of points in our discretized solution.
+
+</div>
+
+---
+
+# Solve for $w$
+
+<div class="small">
+
+Separate $w$ to one side of the equation:
+
+<p style="margin-bottom: 0;">
+$D w_{4} - 4 D w_{3} + \left[6D + \Delta x^4 (\rho_m - \rho_w) g\right] w_2 - 4 D w_{1} + D w_{0} = \Delta x^4 q_2$
+</p>
+<p class="fragment" style="margin-bottom: 0;">
+$D w_{5} - 4 D w_{4} + \left[6D + \Delta x^4 (\rho_m - \rho_w) g\right] w_3 - 4 D w_{2} + D w_{1} = \Delta x^4 q_3$
+<br>
+...
+<br>
+$D w_{N-1} - 4 D w_{N-2} + \left[6D + \Delta x^4 (\rho_m - \rho_w) g\right] w_{N-3} - 4 D w_{N-4} + D w_{N-5} = \Delta x^4 q_{N-3}$
+</p>
+<p class="fragment" style="margin-bottom: 0;">
+$w_0 = 0$
+<br>
+$w_{N-1} = 0$
+<br>
+$w_1- w_0 = 0$
+<br>
+$w_{N-1} - w_{N-2} = 0$
+</p>
+
+</div>
+<div class="r-stretch bottom-right fragment">
+
+Linear system with $N$ equations and $N$ unknowns.
+<br>
+Solve it to find values of $w$.
+
 </div>
 
 ---
@@ -264,32 +317,27 @@ Density anomalies at subduction zones 👉🏽
 # Predicting gravity
 
 <div class="container">
-<div class="col-left tiny">
+<div class="col-large tiny">
 
-<img src="../assets/disturbance-subduction-model.svg">
+Model of density anomalies due to flexure by a seamount. Anomalies are real
+Earth density minus normal Earth density.
 
-Model of density anomalies due to subduction. Anomalies are real Earth density
-minus normal Earth density.
+<img src="../assets/disturbance-flexure-model.svg">
 
-Assumptions: density contrast between lithosphere-asthenosphere mantle is
+Assumptions: density contrast between lithospheric mantle and asthenosphere is
 negligible, the crust has constant thickness, bending at the surface is equal
 to bending at the Moho.
 
 </div>
-<div class="col-right small">
+<div class="col-small small">
 
-Once again, we can model the gravitational attraction of the deflection with
-the Bouguer plate approximation:
+Model the gravitational attraction of the deflection with the Bouguer plate
+approximation:
 
-$ g_{w} = 2 \pi G \Delta\rho_{top} w + 2 \pi G \Delta\rho_{bottom} w $
+$g \approx 2 \pi G \Delta \rho |w|$
 
-$\Delta\rho_{top} = \rho_c - \rho_w$ if $w > 0$
-
-$\Delta\rho_{top} = \rho_w - \rho_c$ if $w < 0$
-
-$\Delta\rho_{bottom} = \rho_m - \rho_c$ if $w > 0$
-
-$\Delta\rho_{bottom} = \rho_c - \rho_m$ if $w < 0$
+The seamount will have a different contrast and thickness so we can't easily
+combine the top and bottom effects.
 
 </div>
 </div>
@@ -299,7 +347,7 @@ $\Delta\rho_{bottom} = \rho_c - \rho_m$ if $w < 0$
 # Does it fit the data?
 
 We can now predict gravity disturbances and bathymetry caused by the deflection
-of the lithosphere across subduction zones.
+of the lithosphere under the load of a seamount.
 
 In the associated **practical** activity, we will implement the corresponding
 equations in Python and evaluate how well our model fits the available data
@@ -309,12 +357,12 @@ along profiles.
 
 # Reading
 
-For an detailed discussion and derivation of equations,
+For an detailed discussion and derivation of some equations,
 <br>
 refer to the excellent textbooks:
 
-* "The Solid Earth" by C. M. R. Fowler (section 9.6)
-* "Geodynamics" by Donald Turcotte and Gerald Schubert (section 3.17)
+* "The Solid Earth" by C. M. R. Fowler (section 5.7)
+* "Geodynamics" by Donald Turcotte and Gerald Schubert (section 3.16)
 
 ---
 
