@@ -1,4 +1,7 @@
 """
+Python module with some of the functions developed during the practicals.
+
+Can be imported in different notebooks to reuse code instead copy-pasting.
 """
 import numpy as np
 import xarray as xr
