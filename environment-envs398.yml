@@ -1,4 +1,4 @@
-name: lithosphere
+name: envs398
 channels:
     - defaults
     - conda-forge
@@ -14,15 +14,9 @@ dependencies:
     - xarray
     - cartopy
     - netcdf4
-    - pygmt
     - cmocean
-    - pyproj
-    # To serve slides
-    - livereload
-    # Fatiando packages
-    - verde==1.6.0
-    - boule==0.2.0
-    - harmonica==0.2.1
-    # To speed up Verde
+    - verde==1.6.*
+    - boule==0.3.*
+    - harmonica==0.4.*
     - pykdtree
     - numba
