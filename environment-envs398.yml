@@ -1,7 +1,7 @@
 name: envs398
 channels:
-    - defaults
     - conda-forge
+    - defaults
 dependencies:
     - python==3.9
     - pip
@@ -13,7 +13,8 @@ dependencies:
     - jupyterlab
     - xarray
     - cartopy
-    - netcdf4
+    - conda-forge::netcdf4
+    - conda-forge::libnetcdf
     - cmocean
     - verde==1.6.*
     - boule==0.3.*
